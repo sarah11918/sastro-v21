@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
+    "dev": "bash parseenv.sh astro dev",
+    "start": "bash parseenv.sh astro dev",
+    "build": "bash parseenv.sh astro build",
     "preview": "astro preview"
   },
   "devDependencies": {
