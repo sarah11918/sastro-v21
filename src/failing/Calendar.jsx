@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import DayPicker from "react-day-picker";
-import "react-day-picker/lib/style.css";
-import PropTypes from 'prop-types';
+// import DayPicker from "react-day-picker";
+// import "react-day-picker/lib/style.css";
+// import PropTypes from 'prop-types';
 
 export default function Calendar() {
   const [day, setDay] = useState(null);
