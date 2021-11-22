@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components'
+import BirdFetchComponent from '../../components/experiments/BirdFetchComponent.jsx';
+---
+<BaseLayout title="Fetching Data from an API using Headers" >
+    <main>
+    <h1>Fetching Data using Headers</h1>
+    <p>Making an API call without headers can be done right in the code fence of an Astro file.</p>
+
+    <p>But, if you need to use headers, for example to include an API token, then the data will have to be fetched in a component, and the component rendered in your .astro file.</p>
+
+    <h2>Fetching data from an API call with token in header</h1>
+        <h3>Fetch is performed in the component</h3>
+       <BirdFetchComponent client:load />
+    <Markdown>
+    The code for this page:
+
+```astro
+        ---
+        import BaseLayout from '../../layouts/BaseLayout.astro';
+        import { Markdown } from 'astro/components'
+        import BirdFetchComponent from '../../components/experiments/BirdFetchComponent.jsx';
+        ---
+        <BaseLayout title="Fetching Data from an API using Headers" >
+            <main>
+                <h1>Fetching Data using Headers</h1>
+                <p>Making an API call without headers can be done right in the code fence of an Astro file.</p>
+                <p>But, if you need to use headers, for example to include an API token, then the data will have to be fetched in a component, and the component rendered in your .astro file.</p>
+
+                <h2>Fetching data from an API call with token in header</h1>
+                <h3>Fetch is performed in the component</h3>
+                <BirdFetchComponent client:load />
+            </main>
+        </BaseLayout />
+```
+    And the code from the component (to come, trouble shooting new Markdown rendering issues!)
+    
+  </main>
+</BaseLayout>
