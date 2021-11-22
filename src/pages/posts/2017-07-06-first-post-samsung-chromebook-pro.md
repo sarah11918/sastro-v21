@@ -22,6 +22,4 @@ I'm currently typing a post in JotterPad on the Samsung Chromebook Pro, then wil
 
 And just to make things more interesting (and help me remember my markdown syntax), let's try incorporating a photo. (And yes, I know the photo is sideways. That's an entirely different issue, unrelated to this post, that I'll tackle later. I'm just considering it a success that a photo even shows up at all!)
 
-![Samsung Chromebook Pro](https://lh3.googleusercontent.com/pw/AM-JKLVXLDH3id8byDvCQStDBzIu-NLPauK5VYtRMW7N5SSZI4cx796QPOFvOQ-PD-DgPqTb8bWxGO9QMSFfZ1NpUbABFxrQE7pcBsTZ4acwDXPBATOKOGghT-KpTgIHw3t1IRFLlghF86-xIiUtduRJF23Y3A=w250-no?.jpg)
-
 ![Samsung Chromebook Pro](https://lh3.googleusercontent.com/pw/AM-JKLUvsp2IhrgznwyEnnplwosOGgCgsQELgmSEQ_i2K6AVXfjSEtHT-zgg1ii90fzZgvuSOs-f94qyyX8QfMzQsO335IUH0dury8sSfv9qahndrv7gxy7CRrtcS_TzvFm_ReXnEuctarJ580rPhXgcGkJs8A=w786-h1394-no?.jpg)
