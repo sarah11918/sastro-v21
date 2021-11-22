@@ -1,5 +1,5 @@
 ---
-title: Interpreting the Astro "Upgraded Required" message in live web preview
+title: Interpreting the "Upgrade Required" message in live web preview of Astro
 author: Sarah
 date: 2021-09-04
 description: A misleading error message that might steer you down the wrong path...
@@ -9,7 +9,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 
 If you're starting up one of the [Astro starter examples](https://github.com/snowpackjs/astro/tree/main/examples), or loading your own project in one of the online cloud coding environments (e.g. [CodeSandbox](https://codesandbox.io), [Gitpod](https://gitpod.io), [Forestry](https://forestry.io)) then you might see the following "Upgrade Required" message in the live preview:
 
-![Window preview in CodeSandbox is white page with only the text "Upgrade Required" and I have handwritten in blue text "This is a lie!" Below, CodeSandbox has a toast message pop up that says "Port 3000 Opened - The server is listening on port 3000, do you want to open it?" And I have handwritten a big "YES" pointing to the button that says, "Open Browser pane"](/images/upgrade-required-port-3000.png)
+![Window preview in CodeSandbox is white page with only the text 'Upgrade Required' and I have handwritten in blue text 'This is a lie!' Below, CodeSandbox has a toast message pop up that says 'Port 3000 Opened - The server is listening on port 3000, do you want to open it?' And I have handwritten a big YES pointing to the button that says, Open Browser pane](https://lh3.googleusercontent.com/pw/AM-JKLUAkXd-cnPK50iX20cedS_VdxY7uPKmOABob6GtKRxfU4Ovd4uA58alnro-u_MVEJySGokEj9k-9EG7GivRHQbXUxaQpzR2H1oBdPgUm01TeeJ7hOWroo9Xv73O04Phn2witGycogvbX7s243Pz3g1hxg=w1180-h597-no?.jpg)
 
 This is an unfortunately misleading message, because there's nothing you need to upgrade. All you have to do is switch to a different port and you'll see that everything is (should be!) working just fine.
 

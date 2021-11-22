@@ -1,6 +1,6 @@
 ---
 title: Avoiding Toronto Blue Jays baseball spoilers on Twitter
-subtitle: ""
+subtitle:
 date: "2015-04-13"
 excerpt: ' I''ve been meaning to write to explain exactly how my super-awesome-spoiler-proof Twitter system works.  "So, you mute keywords and hashtags?" Oh, if only it were that simple!'
 hide_header: false
@@ -27,7 +27,7 @@ Here's how I do it:
 
 [Yoru Fukurou (Night Owl) Mac OS X twitter client](https://sites.google.com/site/yorufukurou/home-en). Fortunately, I stumbled upon this incredibly customizable client years ago, even before I knew I'd need it. As it turns out, this is the only twitter client I have found that supports FILTERING of tweets, in addition to simply MUTING tweets.
 
-![Mac App Yoru Fukurou in use, set to "mini-view"](https://lh3.googleusercontent.com/pw/AM-JKLWv7p26kNubMJV8fbB9XKfxBcp-EGS0jOUHnjaLTBUJDyXHfvEqjh_5aMuEgVGhGntggUO4L7RtSrJHTmzAp0Qoqzdt3QVAeZv-pc3-Hu-gjw5FlElzSLt6Hpx2jUnllWXMB-GGtfr3i0Bl9KPDAAVJZw=w1353-h678-no?.jpg)
+![Mac App Yoru Fukurou in use, set to 'mini-view'](https://lh3.googleusercontent.com/pw/AM-JKLWv7p26kNubMJV8fbB9XKfxBcp-EGS0jOUHnjaLTBUJDyXHfvEqjh_5aMuEgVGhGntggUO4L7RtSrJHTmzAp0Qoqzdt3QVAeZv-pc3-Hu-gjw5FlElzSLt6Hpx2jUnllWXMB-GGtfr3i0Bl9KPDAAVJZw=w1353-h678-no?.jpg)
 
 (Note: I prefer the "mini-view" (highly condensed text except for the tweet you've selected) because I'm a "wall of text" kinda gal, but the client is highly customizable for a variety of views. Don't let all the text put you off if it's not your thing! See Yoru Fukurou's web site for examples of more traditional appearance choices.)
 

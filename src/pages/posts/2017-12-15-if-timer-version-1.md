@@ -27,7 +27,7 @@ I didn't need a *timer*. I didn't need something to tell me when x minutes or ho
 On a train from Germany to Slovakia just a week earlier, Joe and I had been pairing on a "tutoring app" for fun, since the idea I had was similarly basic and he thought it would be a good introduction to code for me. (By "tutoring app" I mean an app wherein a student who feels "stuck" presses a button and randomly gets one of my "familiar phrases" like, "What do YOU think you should do next?" or "What information in the question have you not used yet?") As a result of that train ride, we got "Tutr"
 
 ![Coding on a train](https://lh3.googleusercontent.com/pw/AM-JKLXdQcxIacFKH6x4PPZxXcU_8Y5ak-pdQnHeE1NtAiCcdWFQ89JXCisZ5BteykM5vJYF6hW2r_17aAZGbVM9V0Qj3Rg2FnIo-uU2qoumH_tquKMfF23hGIf4D7lgPPLqjdVgqoWejNjG9q6NSWXcFefkWg=w1752-h987-no?.jpg)
-![Me with my first "app"](https://lh3.googleusercontent.com/pw/AM-JKLU52pi7OY8FK3BlrVoQWf_v5rgJ7NVN8b-VQj4mHOi_gVaVn9TGvdCvwUfrJ2q_MadkQFk30Hy2WaX7dsdXELeGUraOsBquD3nNTclXhqZuQuxEkq9UYXmjpFKbfCTJiFy_fnsnbmxiypCKTgfbua2tnA=w1752-h987-no?.jpg)
+![Me with my first 'app'](https://lh3.googleusercontent.com/pw/AM-JKLU52pi7OY8FK3BlrVoQWf_v5rgJ7NVN8b-VQj4mHOi_gVaVn9TGvdCvwUfrJ2q_MadkQFk30Hy2WaX7dsdXELeGUraOsBquD3nNTclXhqZuQuxEkq9UYXmjpFKbfCTJiFy_fnsnbmxiypCKTgfbua2tnA=w1752-h987-no?.jpg)
 
 ## Second Verse, Same as the First
 
@@ -55,8 +55,8 @@ You might not think of yourself as someone who fasts, but actually, we all do! I
 
 There's a little info button in the app to give you the pop-up cheat sheet for fasting: for 3 - 5 hours after you eat, your body is digesting. If you go a full 12 hours without consuming food, your body actually does start to "fast" (even though we think of it as fasting for 12 hours) and that's when your body really starts to burn fat at a nice clip. In between, you're "satiated." So, if you press the "Start Fasting" button in IF Timer, then the app will hold on to that time and every time you come back to refresh the page (it's a web app, so it just runs in a browser), your status will be updated and you can see at a glance how long you've been fasting and what fasting state your body is in (based on the theory of roughly how long your body does what).
 
-![App in use, showing "Fed" state](https://lh3.googleusercontent.com/pw/AM-JKLUHi-n3NT64l4huA8MJjQEhFXznIVKCSavKvtt1OzT-lo6tEfB8JULTAhELowYKeu3SwJvI0g_YjfNKU8dIfnnArtsYlzbjzbxZw3twSuq19IG1PhoLMTqUbvTYXR5lScNWmW8t5H0aSSpBmV_VxT9p2w=w250-no?.jpg)
-![App in use, showing "Fasting" state](https://lh3.googleusercontent.com/pw/AM-JKLVUDrH7Go_5OF1TizDG-ijAgVq196dX0S6XoeBhXxNZtNGo8lPWcc2Q9-GJMxk48tBRSIkImoNiO8BgMSo1opCeqaPD2Ey0nn1DVKXlo9jfLUeHRzYGPPRe6frVUST4C6BP7alNA-TuLy2FRkMjYRKOWA=w250-no?.jpg)
+![App in use, showing 'Fed' state](https://lh3.googleusercontent.com/pw/AM-JKLUHi-n3NT64l4huA8MJjQEhFXznIVKCSavKvtt1OzT-lo6tEfB8JULTAhELowYKeu3SwJvI0g_YjfNKU8dIfnnArtsYlzbjzbxZw3twSuq19IG1PhoLMTqUbvTYXR5lScNWmW8t5H0aSSpBmV_VxT9p2w=w250-no?.jpg)
+![App in use, showing 'Fasting' state](https://lh3.googleusercontent.com/pw/AM-JKLVUDrH7Go_5OF1TizDG-ijAgVq196dX0S6XoeBhXxNZtNGo8lPWcc2Q9-GJMxk48tBRSIkImoNiO8BgMSo1opCeqaPD2Ey0nn1DVKXlo9jfLUeHRzYGPPRe6frVUST4C6BP7alNA-TuLy2FRkMjYRKOWA=w250-no?.jpg)
 
 Even if you don't intentionally incorporate fasting into your routine, you can use this app to see how frequently you "hit green" and get your body into a nice, healthy fat-burning state. (There are other health benefits of hitting the fasted state, too. But most of us don't need much more convincing than fat-burning!) 
 
