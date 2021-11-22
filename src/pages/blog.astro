@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components'
+let allPosts = Astro.fetchContent('../pages/posts/*.md');
+allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+---
+<BaseLayout title="My Blog">
+  <main>
+    <h2> Recent Blog Posts </h2>
+   <div>
+      {allPosts.slice(0, 5).map((post) => (
+        <article>
+          <a href={post.url} class="summary-title"><h3>{post.title}</h3></a>
+          <p>{post.description}</p>
+          <p>{new Date(post.date).toISOString().slice(0, 10)}</p>
+          <a style="font-size: 0.8em;" href={post.url}>Read more</a>
+          <hr>
+        </article>
+      ))}
+    </div>
+    <h4><a href="/posts">See full post archive ...</a></h4>
+    <hr>
+    <Markdown>
+      
+    #### The Code For This Page:
+
+    This is **src/pages/blog.astro** which is generated from markdown files located in **src/pages/posts/** using: 
+
+    ```js
+    ---
+    let allPosts = Astro.fetchContent('./posts/*.md');
+    allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    Astro.fetchContent('src/pages/posts/*.md')
+    ---
+    <div>
+      {allPosts.slice(0, 3).map((post) => (
+        <article>
+          <a href={post.url}><h3>{post.title}</h3></a>
+          <p>{post.url}</p>
+          <p>{post.description}</p>
+          <p>{new Date(post.date).toISOString().slice(0, 10)}</p>
+          <a href={post.url}>Read more</a>
+        </article>
+      ))}
+    </div>
+    ```
+    </Markdown>
+  </main>
+</BaseLayout>
