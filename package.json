@@ -12,8 +12,5 @@
     "@astrojs/renderer-react": "^0.3.0",
     "@astrojs/renderer-svelte": "^0.2.0",
     "astro": "^0.21.1"
-  },
-  "dependencies": {
-    "react-day-picker": "^7.4.10"
   }
 }

@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components';
+import RecentTweet from '../../components/RecentTweet.jsx';
+---
+<BaseLayout title="Recent Tweet">
+  <main>
+  <Markdown>
+  ## Here is a tweet embedded via "react-twitter-widgets"
+
+  Install ["react-twitter-widgets"](https://github.com/andrewsuzuki/react-twitter-widgets) and configure options using [Twitter documentation](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
+  </Markdown>
+ 
+  <RecentTweet user="sarah11918" client:load />
+
+  <RecentTweet user="jbrains" client:load />
+  
+  <Markdown>
+
+  Code for this page:
+  ```astro
+  //src/pages/experiments/recent-tweet.astro
+  ---
+  import BaseLayout from '../../layouts/BaseLayout.astro';
+  import { Markdown } from 'astro/components';
+  import RecentTweet from '../../components/RecentTweet.jsx';
+  ---
+  <BaseLayout title="Recent Tweet">
+    <main>
+      <Markdown>
+      ## Here is a tweet embedded via "react-twitter-widgets"
+      </Markdown>
+      <RecentTweet user="sarah11918" client:load />
+      <RecentTweet user="jbrains" client:load />
+    </main>
+  </BaseLayout>
+  ```
+
+  Code for the Twitter component RecentTweet:
+
+  ```js
+  import React from "react";
+  import { Timeline } from "react-twitter-widgets";
+
+  const RecentTweet = ({user}) => (
+    <>
+      <div className="tweet">
+        <Timeline
+          dataSource={{
+            sourceType: "profile",
+            screenName: user,
+          }}
+          options={{
+            width: "100",
+            tweetLimit: "1",
+            dnt: "true"
+          }}
+        />
+      </div>
+    </>
+  );
+
+  export default RecentTweet;
+  ```
+
+
+  </Markdown>
+  </main>
+</BaseLayout>
