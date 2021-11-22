@@ -27,12 +27,12 @@ Struggling with Jekyll themes I needed to customize led me to [Scrimba.com](http
 
 Being exposed to more (and more modern) front end tech meant I kept discovering more and more platforms, tools and services. (And, apparently I JavaScript now, too??) So when [Stackbit](https://www.stackbit.com) floated across my radar, I knew I wanted to try it out. 
 
-![Stackbit Home Page](/images/stackbithome.jpg "Stackbit.com")
+![Stackbit Home Page](https://lh3.googleusercontent.com/pw/AM-JKLVfks3i3kXPOB8U15wpNYth9PqlwQGOtiXE4rC1CI64DYSJ9_a_ZXe34h7KH4U0gLtELof-Fj-ntXJz7vgxe0UiNLk_HdYucR7AJt7DAlKlcQosu_zD3gylka_1AUl6R1PKkKRZ276xNZktYJieWDsTpg=w1680-h998-no?.jpg "Stackbit.com")
 
 So now having used their site builder to generate a new site, imported (and updated) the old content I care to keep, and mostly transitioned to a new, functional site, here I am attempting to add a new post via Stackbit!
 
-![Stackbit Studio - editing the website with live preview](/images/stackbiteditor00.jpg "Stackbit Studio Editing")
+![Stackbit Studio - editing the website with live preview](https://lh3.googleusercontent.com/pw/AM-JKLW2I8_tE-qzRv5w74vA5h9weX6W9VsIrLCUozzBfOU6gdFsoRnrn93viT66yjk3GuxgyZ5KIWqOJnBXvkrso2swuuVi4P9rD6oAb7w-jfnBVvWKeDA2z0h-ul0C02cY4Nl_B-uxxSFVCWdWmaQO264N8Q=w1680-h982-no?.jpg "Stackbit Studio Editing")
 
-![Stackbit Studio - live Netlify publishing status and deploy logs available right on the editing page](/images/stackbitpublishing.jpg "Stackbit Studio Publishing")
+![Stackbit Studio - live Netlify publishing status and deploy logs available right on the editing page](https://lh3.googleusercontent.com/pw/AM-JKLUhU73M-LzMoojY2yAMWJVP83EQ4clENWa3xgjVrqfmOdapep2j8TiVFdIrTzCe3QFC9NT0R8m2Zq_RAZdUppoHRDx7-oNDy86_1hZymbnLAh3unbL4qn_Gf7daYZWnWhvuTSLxntH2eYa5IwaboiKdBw=w1680-h952-no?.jpg "Stackbit Studio Publishing")
 
 
