@@ -1,0 +1,164 @@
+---
+import { Markdown } from 'astro/components';
+import { Prism } from 'astro/components';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+let codesnippet = `
+  // In your gatsby-config.js
+    plugins: [
+      {
+        resolve: \`gatsby-transformer-remark\`,
+        options: {
+          plugins: [
+            \`gatsby-remark-prismjs\`,
+          ],
+        },
+      },
+    ],
+  `
+---
+<BaseLayout title = "Code Snippet Samples" >
+<main>
+<h1>Using Astro's Prism component to render Code snippets:</h1>
+<p>Note! "astro" is a language recognized by both Markdown and Prism. Since the code the example is trying to render below is JS, all the code examples you see use "js" as the code language. But, on this page, in order for *me* to render an example of Astro code that is rendering JavaScript, I'm actually using "astro" as the code language! 🤣</p>
+
+<p>See the bottom of the page for an example of an Astro render.</p>
+
+  <Prism lang="astro" code={`
+    //Be sure to choose a prismjs theme and include the stylesheet link in <head>!
+    //e.g. <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css">
+    //NB: The \` character needs to be escaped!
+    <Prism lang="js" code={\` 
+    // In your gatsby-config.js
+    plugins: [
+      {
+        resolve: \\\`gatsby-transformer-remark\\\`,
+        options: {
+          plugins: [
+            \\\`gatsby-remark-prismjs\\\`,
+          ],
+        },
+      },
+    ],
+    \`}/>
+  `} />
+
+<h3>renders as...</h3>
+  <Prism lang="js" code={` 
+    // In your gatsby-config.js
+    plugins: [
+      {
+        resolve: \`gatsby-transformer-remark\`,
+        options: {
+          plugins: [
+            \`gatsby-remark-prismjs\`,
+          ],
+        },
+      },
+    ],
+  `} />
+
+  <h2>Code written between 2 markdown tags also works (no escape for single back ticks needed)</h2>
+
+  <Prism lang="astro" code={`
+  <Markdown>
+    \`\`\`js
+      // In your gatsby-config.js
+      plugins: [
+        {
+          resolve: \`gatsby-transformer-remark\`,
+          options: {
+            plugins: [
+              \`gatsby-remark-prismjs\`,
+            ],
+          },
+        },
+      ],
+    \`\`\`
+  </Markdown>
+  `} />
+
+  
+
+  <h2>Code passed in as a variable (defined in frontmatter) to code attribute of a Prism component</h2>
+  <Prism lang="astro"  code={`
+    <Prism lang="js"  code={codesnippet} />
+  `} />
+  <h3>Combined with the following Astro frontmatter...</h3>
+
+<Prism lang="astro" code={`
+---
+import { Markdown } from 'astro/components';
+import { Prism } from 'astro/components';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+let codesnippet = \`
+  // In your gatsby-config.js
+    plugins: [
+      {
+        resolve: \\\`gatsby-transformer-remark\\\`,
+        options: {
+          plugins: [
+            \\\`gatsby-remark-prismjs\\\`,
+          ],
+        },
+      },
+    ],
+  \`
+---
+`} />
+<h3>also successfully renders as ... </h3>
+  <Prism lang="js"  code={codesnippet} />
+
+<h2>Rendering Astro Code</h2>
+<p>In order to show you Astro code, I use the language "astro" in both the Markdown "three tick" notation, and in a Prism component.</p>
+
+<p>Here's my Astro new page template:</p>
+<Markdown>
+  ```astro
+  ---
+  import BaseLayout from '../layouts/BaseLayout.astro';
+  ---
+  <BaseLayout title="New Page Template!">
+    <main>
+      <p>New page template!</p>
+    </main>
+  </BaseLayout>
+  ```
+... and I've rendered it by typing this:
+</Markdown>
+<Prism lang="astro" code={`
+ <Markdown>
+   \`\`\`astro
+    ---
+    import BaseLayout from '../layouts/BaseLayout.astro';
+    ---
+    <BaseLayout title="New Page Template!">
+      <main>
+        <p>New page template!</p>
+      </main>
+    </BaseLayout>
+    \`\`\`
+</Markdown>
+`} />
+
+<p>... or this</p>
+<p>NOTE: Astro is moving from Prism to Shiki, so this page isn't yet (but will at some point be) updated with the more recent Code component!</p>
+<Markdown>
+```astro
+  <Prism lang="astro" code={`
+      ---
+      import BaseLayout from '../layouts/BaseLayout.astro';
+      ---
+      <BaseLayout title="New Page Template!">
+        <main>
+          <p>New page template!</p>
+        </main>
+      </BaseLayout>
+  `} />
+```
+</Markdown>
+
+
+</main>
+</BaseLayout>
