@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IntervalCounter from '../../components/experiments/IntervalCounter.jsx';
+import PropsUpdate from '../../components/experiments/PropsUpdate.jsx';
+import IntervalCounterColor from '../../components/experiments/IntervalCounterColor.jsx';
+import GetFactorsExample from '../../components/experiments/GetFactors.jsx';
+import GetFactorsNoMemo from '../../components/experiments/GetFactorsNoMemo.jsx';
+import Markdown from 'astro/components'
+---
+<BaseLayout title="React useEffect() interval counter">
+  <main>
+    <p>A counter using useEffect and useReducer</p>
+    <IntervalCounter client:load />
+    
+    <hr />
+    <p>Counter that randomly changes color on change:</p>
+
+    <IntervalCounterColor client:load />
+
+    <p>From: <a href="https://overreacted.io/a-complete-guide-to-useeffect/">overreacted.io blog</a></p>
+    <hr />
+    <PropsUpdate client:load />
+    
+    <p>From an example on <a href="https://daveceddia.com/useeffect-hook-examples/">Dave Ceddia's Blog</a></p>
+      <hr />
+  <h2>App that calculates factors of a number, and can also toggle theme
+  <h3>useEffect with useCallback to prevent re-rendering of list when only Theme (dark mode) changes:</h3>
+  <GetFactorsExample client:load />
+    <h3>useEffect without memoization to prevent re-rendering of list when only Theme (dark mode) changes:</h3>
+  <GetFactorsNoMemo client:load />
+  
+  <p>From <a href="https://vaishnavs.hashnode.dev/reactjs-usecallback-hook">Vaishnav's Blog</a></p>
+  </main>
+
+</BaseLayout>
