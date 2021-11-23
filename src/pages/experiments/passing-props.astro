@@ -1,45 +1,79 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Form2 from '../../components/experiments/Form2.jsx';
-import {DATA} from '../../components/experiments/CurrencyApp.jsx';
-import {Markdown} from 'astro/components';
+import Form from '../../components/experiments/Form.jsx';
+import { Markdown } from 'astro/components';
 ---
-
-<BaseLayout title="Passing Props">
+<BaseLayout title="React Form">
   <main>
-  <h2>Importing data from one React component, then passing it as props to a different React component.</h2>
-
-    <p>This .astro page imports the DATA object from the React Context example, and passes the currency symbol prop into a version of the Form component that accepts currency. This property is used as the default currency value in the form when state is created, and so the currency filed is pre-filled when the form is rendered.</p>
+    <p>A React form with controlled components holding data in state</p>
+  
+    <Form client:load />
     
-    <Form2 symbol={DATA.currency} client:load />
-
     <Markdown>
-    The code for this astro page:
-
+    Here's the code for this page:
+    
     ```astro
-    //src/pages/experiments/passing-props.astro
+
+    //src/pages/experiments/form.astro
     ---
     import BaseLayout from '../../layouts/BaseLayout';
-    import Form2 from '../../components/experiments/Form2.jsx';
-    import {DATA} from '../components/experiments/CurrencyApp.jsx';
+    import Form from '../../components/Form.jsx';
     ---
-
-    <BaseLayout title="Passing Props">
-      <main>
-        <h2>Importing data ....</h2>
-
-        <p>This .astro page imports the DATA ...</p>
-
-        <Form2 symbol={DATA.currency} client:load />
-
-      </main>
+    <BaseLayout title="React Form">
+        <main>
+            <p>A React form with controlled components holding data in state</p>
+            <Form client:load />
+        </main>
     </BaseLayout>
+    
     ```
 
-    Note: Now, CurrencyApp must export BOTH its CurrencyApp function AND the DATA object. (Instead of export default Currency App)
+    The code for the component will be added after I trouble shoot some Markdown rendering issues! :)
 
- 
-    And, Form2 now both accepts a currency symbol as a prop, and uses this value when creating state for its own data that it holds:
+    ```jsx
+    import React, { useState } from 'react';
+
+      const Form = () => {
+            const [data, setData] = useState({
+                name: "",  
+                language: "",
+            })
+
+            const handleChange = event => {
+                setData({...data, [event.target.name]: event.target.value})
+            }
+
+            const handleSubmit = (event) => {
+           event.preventDefault()
+           alert(\`Thanks, ${data.name}! I'll speak to you in ${data.language}.\`)
+           setData({ name: "",  language: ""})
+       }
+
+          return(
+         <>
+           <h3>My Form</h3>
+           <form onSubmit={handleSubmit}>
+             <div>
+               <label htmlFor="name">First name</label>
+               <br />
+               <input type="text" name="name" value={data.name} onChange={handleChange} />
+             </div>
+             <div>
+               <label htmlFor="language">Preferred language</label>
+               <br />
+               <input type="text" name="language" value={data.language} onChange={handleChange} />
+             </div>
+           
+             <button>Submit</button>
+           </form>
+         </>
+       ) 
+
+            
+      }
+
+      export default Form
+    ```
 
     </Markdown>
   </main>
