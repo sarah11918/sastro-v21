@@ -31,7 +31,7 @@ export default function BirdFetchComponent() {
     const queryLocation = event.target.elements.location.value.toUpperCase();
     const recentUrl = `https://api.ebird.org/v2/data/obs/${queryLocation}/recent?back=14`;
     const myHeaders = new Headers();
-    myHeaders.append("X-eBirdApiToken",`2ifbkhv7g8ct`);
+    myHeaders.append("X-eBirdApiToken","API_KEY");
 
     const requestOptions = {
       method: "GET",
