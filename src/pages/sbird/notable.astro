@@ -1,0 +1,9 @@
+---
+import BirdLayout from '../../layouts/BirdLayout.astro';
+import Notable from '../../bird/Notable.jsx';
+---
+<BirdLayout title="Notable Bird Sightings">
+  <main>
+    <Notable client:load/>
+  </main>
+</BirdLayout>
