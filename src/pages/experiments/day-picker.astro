@@ -1,0 +1,59 @@
+---
+import Calendar from '../../components/experiments/Calendar.jsx';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {Markdown} from 'astro/components'
+---
+<BaseLayout title="Day Picker">
+  <main>
+     <Calendar client:only="react"/>
+    <Markdown>
+    Here is the code for this page, rendering the date picker widget:
+
+    ```astro
+    // src/pages/day-picker.astro
+    ---
+    import Calendar from '../components/Calendar.jsx';
+    import BaseLayout from '../layouts/BaseLayout.astro';
+    ---
+    <BaseLayout title="Day Picker">
+      <main>
+        <Calendar client:only="react"/>
+      </main>
+    </BaseLayout>
+    ```
+    </Markdown>
+   
+    <hr />
+    <Markdown>
+    ... and here is the React component, using [React Day Picker](https://react-day-picker.js.org/):
+
+    ```js
+    // src/componentes/Calendar.jsx
+
+    import React, { useState } from "react";
+    import DayPicker from "react-day-picker";
+    import "react-day-picker/lib/style.css";
+
+    export default function Calendar() {
+      const [day, setDay] = useState(null);
+      const options = { 
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' };
+
+      const handleDayClick = (event) => {
+        setDay(event)
+      };
+
+      return (
+        <div>
+          <DayPicker selectedDays={day} onDayClick={handleDayClick} />
+          <p>{day ? day.toLocaleDateString('en-CA', options) : "Please select a day 👻"}</p>
+        </div>
+      )
+    };
+    ```
+    </Markdown>
+  </main>
+</BaseLayout>
