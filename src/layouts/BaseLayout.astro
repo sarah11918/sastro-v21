@@ -1,4 +1,5 @@
 ---
+import * as Icon from '@astropub/icons';
 const { content = {}, title, description, canonicalURL } = Astro.props;
 const formattedTitle = `${title} 👩‍💻 Sarah Rainsberger`
 const site={
@@ -161,7 +162,7 @@ const imageAlt = content?.image?.alt ?? site.image.alt;
                                 </span>
                                 <span style="display: none;">CodePen</span></a>
                         </div>
-      <p><a class="footer-link" href="http://astro.build">#BuiltWithAstro</a> by <a class="footer-link" href="https://www.twitter.com/sarah11918">@sarah11918</a> on a Chromebook with <a class="footer-link" href="https://codesandbox.io">CodeSandbox</a> and <a class="footer-link" href="https://gitpod.io">Gitpod</a></p>
+      <p><Icon.Rocket fill="#addbff" /> <a class="footer-link" href="http://astro.build">#BuiltWithAstro</a> <Icon.Rocket fill="#addbff" /> by <a class="footer-link" href="https://www.twitter.com/sarah11918">@sarah11918</a> on a Chromebook with <a class="footer-link" href="https://twitter.com/search?q=(%23NoLocalDevEnvironment)&src=typed_query">#NoLocalDevEnvironment</a></p>
       <p><a class="footer-link" href="/astro-get-started-in-browser">Find out how to get started building with Astro in the browser!</a></p>
       
      
