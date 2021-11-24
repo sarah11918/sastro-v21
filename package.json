@@ -14,6 +14,7 @@
     "astro": "^0.21.3"
   },
   "dependencies": {
-    "@astropub/icons": "^0.1.1"
+    "@astropub/icons": "^0.1.1",
+    "astro-feather-icons": "^0.1.4"
   }
 }
