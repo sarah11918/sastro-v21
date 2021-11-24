@@ -12,5 +12,8 @@
     "@astrojs/renderer-react": "^0.3.0",
     "@astrojs/renderer-svelte": "^0.2.0",
     "astro": "^0.21.3"
+  },
+  "dependencies": {
+    "@astropub/icons": "^0.1.1"
   }
 }
