@@ -12,9 +12,7 @@ export default function Calendar() {
 
   const handleDayClick = (event) => {
     setDay(event)
-  };
-
-  // return this when it works 
+  }; 
 
   return (
     <div>
