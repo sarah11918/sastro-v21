@@ -157,6 +157,8 @@ export default function Regions() {
           name="country"
           type="text"
           placeholder="eg. SE, AU, GB for Great Britain"
+
+          style={{textTransform: "uppercase"}}
         />
         <button>Submit country code</button>
       </form>
