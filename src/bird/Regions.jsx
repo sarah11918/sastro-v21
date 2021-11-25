@@ -86,7 +86,8 @@ export default function Regions() {
       <>
         {location && <><p  id="regions-return" style={{marginTop: "0.1em", marginBottom: "0.1em", paddingLeft: "0.1em"}}>Regions in {location}</p>
         <p style={{marginTop: "0", fontSize:"0.5em", paddingLeft: "0.1em"}}>(click for sub regions)</p></>}
-        <ul style={{listStyleType: "none", paddingLeft: "0.1em", marginTop: "0", paddingBottom: "0"}}>{regionDivs}</ul>
+        
+        <ul style={{display: "flex", flexWrap:"wrap", listStyleType: "none", paddingLeft: "0.1em", marginTop: "0", paddingBottom: "0"}}>{regionDivs}</ul>
       </>
     );
   }
