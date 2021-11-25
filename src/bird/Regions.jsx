@@ -84,7 +84,7 @@ export default function Regions() {
     ));
     return (
       <>
-        {location && <><p style={{marginTop: "0.1em", marginBottom: "0.1em", paddingLeft: "0.1em"}}>Regions in {location}</p>
+        {location && <><p  id="regions-return" style={{marginTop: "0.1em", marginBottom: "0.1em", paddingLeft: "0.1em"}}>Regions in {location}</p>
         <p style={{marginTop: "0", fontSize:"0.5em", paddingLeft: "0.1em"}}>(click for sub regions)</p></>}
         <ul style={{listStyleType: "none", paddingLeft: "0.1em", marginTop: "0", paddingBottom: "0"}}>{regionDivs}</ul>
       </>
@@ -128,8 +128,6 @@ export default function Regions() {
 
   return (
     <>
-      <h5>Need to find your eBird Region?</h5>
-
       <div>
         <details>
           <summary style={{fontStyle: "italic"}}>What is an eBird region?</summary>
@@ -162,12 +160,12 @@ export default function Regions() {
         <button>Submit country code</button>
       </form>
 
-      <div
+      <div id="country-codes"
         style={{
           marginBottom: "0.6em",
           marginTop: "0.6em",
           backgroundColor: "lightgray",
-          height: "18vh",
+          height: "40vh",
           overflowX: "hidden",
           overflowY: "auto",
           textAlign: "justify"

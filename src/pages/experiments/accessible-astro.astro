@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ReactCounter from '../../components/ReactCounter.jsx';
 import BirdFetchComponent from '../../components/experiments/BirdFetchComponent.jsx';
 import Regions from '../../bird/Regions.jsx';
+import Notable from '../../bird/Notable.jsx';
 import { Accordion, AccordionItem } from 'accessible-astro-components'
 import { Markdown } from 'astro/components';
 ---
@@ -18,9 +19,20 @@ import { Markdown } from 'astro/components';
   .panel__inner {
     background: lightgreen;
     overflow-x: hidden;
-    overflow-y: auto; 
+    overflow-y: scroll; 
     height: 60vh;
   }
+
+  .panel__inner::-webkit-scrollbar {
+    width: 8px;
+}
+ .panel__inner::-webkit-scrollbar-thumb {
+    background: #909090;
+    border-radius: 8px;
+}
+panel__inner::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
    button {
         height: 3em;
     }
@@ -35,24 +47,21 @@ import { Markdown } from 'astro/components';
   </style>
   <main>
 <Markdown>
-## Here are some [accessible Astro components](https://github.com/markteekman/accessible-astro-components) from Mark Teekman:
+### Here are some [accessible Astro components](https://github.com/markteekman/accessible-astro-components) from Mark Teekman:
 
-1. An accessible accordian component:
 </Markdown>
 <Accordion>
-  <AccordionItem
-    header="Find the code for your eBird region"
-  >
-    
+  
+  <AccordionItem header="Find the code for your eBird region">
      <Regions client:load />
-
-    <a href="#">Tab to me!</a>
   </AccordionItem>
-  <AccordionItem
-    header="See birds recently observed in your area"
-  >
 
-    <BirdFetchComponent client:visible />
+  <AccordionItem header="See birds recently observed in your area">
+    <BirdFetchComponent client:load />
+  </AccordionItem>
+
+  <AccordionItem header="Look for Notable sightings!">
+    <Notable client:load />
   </AccordionItem>
 
 </Accordion>
