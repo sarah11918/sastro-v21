@@ -7,6 +7,32 @@ import { Accordion, AccordionItem } from 'accessible-astro-components'
 import { Markdown } from 'astro/components';
 ---
 <BaseLayout title="Accessible Astro Components">
+  <style lang="scss" global>
+  
+  .regions {
+    background: #eef9ed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 0.5em;
+  }
+  .panel__inner {
+    background: lightgreen;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    height: 60vh;
+  }
+   button {
+        height: 3em;
+    }
+
+    input {
+        height: 3em;
+    }
+    button.accordion__header {
+      height: auto;
+  }
+
+  </style>
   <main>
 <Markdown>
 ## Here are some [accessible Astro components](https://github.com/markteekman/accessible-astro-components) from Mark Teekman:
@@ -32,22 +58,5 @@ import { Markdown } from 'astro/components';
 </Accordion>
 
   </main>
-  <style lang="scss" global>
-  .regions {
-    background: #eef9ed;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding-left: 0.5em;
-  }
-  .panel__inner {
-    background: lightgreen;
-    overflow-x: hidden;
-    overflow-y: auto; 
-    height: 60vh;
-  }
-  .fab {
-     display: reset;
-     color: #addbff;
-  }
-  </style>
+
 </BaseLayout>

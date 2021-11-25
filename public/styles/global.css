@@ -108,8 +108,8 @@ label {
   text-align: left;
 }
 
-input,
-textarea {
+.contact-message,
+.contact-field {
   width: 85vw;
   min-width: 200px;
   max-width: 300px;
