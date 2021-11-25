@@ -107,10 +107,10 @@ export default function Regions() {
         </li>
       ));
       return (
-        <>
+        <div className="regions">
           <h3>Available sub-regions</h3>
           <ul style={{listStyleType: "none", paddingLeft: "0.1em"}}>{subRegionDivs}</ul>
-        </>
+        </div>
       );
     } else if(subLocation && !props.subRegionData.length){
       return(

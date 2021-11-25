@@ -11,6 +11,7 @@
   "devDependencies": {
     "@astrojs/renderer-react": "^0.3.0",
     "@astrojs/renderer-svelte": "^0.2.0",
+    "accessible-astro-components": "^1.1.0",
     "astro": "^0.21.3"
   },
   "dependencies": {
