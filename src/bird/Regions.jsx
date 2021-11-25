@@ -167,7 +167,7 @@ export default function Regions() {
           marginBottom: "0.6em",
           marginTop: "0.6em",
           backgroundColor: "lightgray",
-          height: "25vh",
+          height: "18vh",
           overflowX: "hidden",
           overflowY: "auto",
           textAlign: "justify"
