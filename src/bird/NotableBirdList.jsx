@@ -100,22 +100,6 @@ export default function NotableBirdList(props) {
           </ul>
         </div>
       </div>
-
-      <div
-        style={{
-          border: "1px dashed #3d5262",
-          padding: " 0 0.25em",
-          color: "#3d5262",
-          textAlign: "center"
-        }}
-      >
-        <h4>Reports of birds whose identification could not be confirmed</h4>
-        {reviewedButNotValidDivs.length > 0 ? (
-          <ul>{reviewedButNotValidDivs}</ul>
-        ) : (
-          "none"
-        )}
-      </div>
       <hr />
       <details>
           <summary style={{fontStyle: "italic"}}>Show Detailed Observation Reports</summary>
