@@ -144,3 +144,10 @@ a.summary-title:hover{
   text-decoration:underline;
   font-style: italic;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25em;
+}

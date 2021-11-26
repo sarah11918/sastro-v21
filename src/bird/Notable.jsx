@@ -167,7 +167,10 @@ export default function Notable() {
         />
         <button>Submit Location</button>
       </form>
-
+      <div className="image-container">
+      <img src="https://lh3.googleusercontent.com/pw/AM-JKLXBCCGGYuLTL_j0cc_iOTzfwB6DGwY3unGiZy39RXWI-rn1kHMAYAPfzE2IoQaD-2yhzLrYyPCb8tbS_i9lsSjfheOJMU8Wj5Ev6RjVt3IZLol1tzNHaSLObFx2vOUW6zDAMhTXPyroEtASiAUynEr6UA=w566-h92-no?.jpg" />
+      </div>
+      
       <NotableBirdList birdList={notableBirds} />
     </>
   );
