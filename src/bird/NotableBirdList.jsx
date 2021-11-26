@@ -116,10 +116,12 @@ export default function NotableBirdList(props) {
           "none"
         )}
       </div>
+      <hr />
+      <details>
+          <summary style={{fontStyle: "italic"}}>Show Detailed Observation Reports</summary>
+          <div style={{backgroundColor: "#eef9ed", padding: "1em"}}>
 
-      <h2>Detailed Sightings</h2>
-
-      <h4>Sightings Not Yet Verified / Pending Review:</h4>
+      <h2>Sightings Not Yet Verified / Pending Review:</h2>
       {birdsPendingDivs.length > 0 ? (
         <ul id="pendingSightings" style={{ paddingLeft: "0" }}>
           {birdsPendingDivs}
@@ -127,7 +129,7 @@ export default function NotableBirdList(props) {
       ) : (
         "none"
       )}
-      <h4>Confirmed Sightings:</h4>
+      <h2>Confirmed Sightings:</h2>
 
       {birdsVerifiedDivs.length > 0 ? (
         <ul id="verifiedSightings" style={{ paddingLeft: "0" }}>
@@ -136,6 +138,9 @@ export default function NotableBirdList(props) {
       ) : (
         "none"
       )}
+        
+        </div>
+        </details>
     </>
   );
 }
