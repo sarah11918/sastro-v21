@@ -88,7 +88,7 @@ export default function Regions() {
     return (
       <>
         {location && <><p  id="regions-return" style={{marginTop: "0.1em", marginBottom: "0.1em", paddingLeft: "0.1em"}}>Regions in {location}</p>
-        <p style={{marginTop: "0", fontSize:"0.5em", paddingLeft: "0.1em"}}>(click for sub regions)</p></>}
+        <p style={{marginTop: "0", fontSize:"0.5em", paddingLeft: "0.1em"}}>(click to see any available sub regions, and meanwhile, to set your default location to this region)</p></>}
         
         <ul style={{display: "flex", flexWrap:"wrap", listStyleType: "none", paddingLeft: "0.1em", marginTop: "0", paddingBottom: "0"}}>{regionDivs}</ul>
       </>
@@ -107,9 +107,11 @@ export default function Regions() {
         <li key={region.code} className="regionItem">
           <span style={{fontSize: "0.75em"}}>
             <button
+              class="region-button"
               id="region.code"
               onClick={() => {
                 context.setDefaultLocation(region.code);
+                console.alert(`Your default region has been updated to ${region.code}!`);
               }}
               >
               {region.code} : {region.name}
@@ -120,6 +122,7 @@ export default function Regions() {
       return (
         <div className="regions">
           <h3>Available sub-regions</h3>
+          <p>Click to set a default region</p>
           <ul style={{listStyleType: "none", paddingLeft: "0.1em"}}>{subRegionDivs}</ul>
         </div>
       );
