@@ -79,7 +79,7 @@ export default function Recent() {
       <h3>Reported in the last 30 days...</h3>
       {recentBirds.map((bird) => (
         <p>
-          {bird.howMany} {bird.comName}(s) seen at {bird.obsDt.toString().slice(11)} on {bird.obsDt.toString().slice(5,10)}
+          {bird.comName} on {bird.obsDt.toString().slice(5,10)}
         </p>
       ))}
     </div>
