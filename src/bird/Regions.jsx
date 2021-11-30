@@ -130,7 +130,7 @@ export default function Regions() {
   return (
     <>
       <div>
-        <details>
+        {/* <details>
           <summary style={{fontStyle: "italic"}}>What is an eBird region?</summary>
           <div>
           <p>
@@ -143,7 +143,7 @@ export default function Regions() {
       </p>
 
           </div>
-        </details>
+        </details> */}
       </div>
      
       <h5 style={{marginBottom: "0"}}>Find a location code!</h5>
