@@ -108,10 +108,10 @@ export default function Regions() {
           <span style={{fontSize: "0.75em"}}>
             <button
               class="region-button"
-              id="region.code"
+              id={region.code}
               onClick={() => {
                 context.setDefaultLocation(region.code);
-                console.alert(`Your default region has been updated to ${region.code}!`);
+
               }}
               >
               {region.code} : {region.name}
@@ -122,8 +122,10 @@ export default function Regions() {
       return (
         <div className="regions">
           <h3>Available sub-regions</h3>
-          <p>Click to set a default region</p>
+          <p>Click to set a default region (Currently: {context.defaultLocation})</p>
+          <div className="sub-regions">
           <ul style={{listStyleType: "none", paddingLeft: "0.1em"}}>{subRegionDivs}</ul>
+          </div>
         </div>
       );
     } else if(subLocation && !props.subRegionData.length){

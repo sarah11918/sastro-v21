@@ -96,10 +96,22 @@
     opacity: 1;
     right: 10px;
   }
-  
-  @media (min-width: 610px) {
-    .birdnav {
-      margin: 0 auto;
-      max-width: 65%;
-    }
-  }
+
+  .sub-regions {
+    background: #eef9ed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 60vh;
+    padding-left: 0.5em;
+}
+
+.sub-regions::-webkit-scrollbar {
+  width: 8px;
+}
+.sub-regions::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: 8px;
+}
+.sub-regions::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
