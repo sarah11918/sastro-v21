@@ -17,9 +17,12 @@ const App = () => {
     <div>
     <h3>Welcome to my bird app!</h3>
     <LocationContext.Provider value={{ defaultLocation: defaultLocation, setDefaultLocation: setDefaultLocation}}>
-
-    <span>Default Location is {defaultLocation} </span>
-
+  
+    
+    <h4>Current Default eBird Location Code: <span style={{fontSize: "1.25em", color:"darkgreen"}}>{defaultLocation}</span></h4>
+    <div className="all-details">
+    <details>
+      <summary>Type in a new default location code</summary>
     <form style={{paddingBottom:"2em"}} onSubmit={changeDefaultLocation}>
         <input
           name="defaultLocation"
@@ -29,11 +32,14 @@ const App = () => {
         />
         <button>Set a default Location</button>
       </form>
-
-    <Notable defaultLocation={defaultLocation}/>
-    <hr />
-    <h2>Other Tools</h2>
-    <details>
+     </details>
+      <details>
+        <summary>Find an area's eBird location code</summary>
+        <div>
+          <Regions />
+        </div>
+      </details>
+      <details>
           <summary style={{fontStyle: "italic"}}>What is an eBird region?</summary>
           <div>
           <p>
@@ -47,13 +53,9 @@ const App = () => {
 
           </div>
         </details>
-      <details>
-        <summary>Find the code for your eBird region</summary>
-        <div>
-          <Regions />
-        </div>
-      </details>
-      <hr/>
+    </div>
+    <Notable defaultLocation={defaultLocation}/>
+    <h2>Other Tools</h2>
       <Recent defaultLocation={defaultLocation}/>
     </LocationContext.Provider>
   </div>

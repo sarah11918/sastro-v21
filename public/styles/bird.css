@@ -115,3 +115,7 @@
 .sub-regions::-webkit-scrollbar-track {
   background: #FFFFFF;
 }
+
+.all-details{
+  padding-bottom: 1em;
+}
