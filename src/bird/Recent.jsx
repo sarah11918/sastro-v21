@@ -1,8 +1,9 @@
 import React from "react";
-import { useState } from "react";
-import RecentBirdList from "./RecentBirdList.jsx";
+import { useState, useContext } from "react";
+import LocationContext from './LocationContext.jsx';
 
-export default function Recent(props) {
+export default function Recent() {
+  const context = useContext(LocationContext);
   const [recentBirds, setRecentBirds] = useState([]);
   const [location, setLocation] = useState("");
 
@@ -30,8 +31,8 @@ export default function Recent(props) {
   }
 
   async function changeLocationToDefaultLocation() {
-    setLocation(props.defaultLocation);
-    const queryLocation = props.defaultLocation
+    setLocation(context.defaultLocation);
+    const queryLocation = context.defaultLocation
     const recentUrl = `https://api.ebird.org/v2/data/obs/${queryLocation}/recent?back=14`
     const myHeaders = new Headers();
     myHeaders.append("X-eBirdApiToken", `${process.env.EBIRD_API_KEY}`);
@@ -53,7 +54,7 @@ export default function Recent(props) {
   return (
       <div style={{ backgroundColor: "#eef9ed", padding:"0.5em", border: "1px solid green", borderRadius: "2px"}}>
       <h3>Get a list of recently-observed birds in your area!</h3>
-      <h5 className="birdtab">Current location set: {location} </h5>
+      <h5 className="birdtab">Current location set: {location} / (Default Location: {context.defaultLocation})</h5>
       
       <div style={{textAlign:"center"}}>
         <button

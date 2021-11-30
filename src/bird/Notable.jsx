@@ -1,14 +1,16 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import NotableBirdList from "./NotableBirdList.jsx";
+import LocationContext from './LocationContext.jsx';
 
-export default function Notable(props) {
+export default function Notable() {
+  const context = useContext(LocationContext);
   const [notableBirds, setNotableBirds] = useState([]);
   const [location, setLocation] = useState("");
 
   function changeLocationToDefaultLocation() {
-    setLocation(props.defaultLocation);
-    getLocationSightings(props.defaultLocation);
+    setLocation(context.defaultLocation);
+    getLocationSightings(context.defaultLocation);
   }
 
   function changeLocationToToronto() {
@@ -98,7 +100,7 @@ export default function Notable(props) {
   return (
     <>
       <h3>See recent reports of Rare or Unusual birds!</h3>
-      <h5 className="birdtab">Showing birds reported in: {location}</h5>
+      <h5 className="birdtab">Showing birds reported in: {location}/ (Default Location: {context.defaultLocation})</h5>
       <div stlye={{ display: "flex" }}>
         <p>Quick select:</p>
         <button
