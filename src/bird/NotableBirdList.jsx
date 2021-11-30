@@ -89,19 +89,27 @@ export default function NotableBirdList(props) {
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <div>
           <h4>Birds Awaiting Review</h4>
+          {birdsPendingDivs.length > 0 ? (
           <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
             {notReviewedDivs}
           </ul>
+          ) : (
+            "none"
+          )}
         </div>
         <div>
           <h4>Birds Recently Confirmed</h4>
+          {birdsVerifiedDivs.length > 0 ? (
           <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
             {reviewedAndValidDivs}
           </ul>
+          ) : (
+        "none"
+      )}
         </div>
       </div>
       <hr />
-      <details>
+      <details id="observation-details">
           <summary style={{fontStyle: "italic"}}>Show Detailed Observation Reports</summary>
           <div style={{backgroundColor: "#eef9ed", padding: "1em"}}>
 
