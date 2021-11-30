@@ -1,5 +1,5 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import LocationContext from './LocationContext.jsx';
 import Regions from './Regions.jsx';
 import Notable from './Notable.jsx';
@@ -16,7 +16,8 @@ const App = () => {
   return(
     <div>
     <h3>Welcome to my bird app!</h3>
- 
+    <LocationContext.Provider value={{ defaultLocation: defaultLocation}}>
+
     <span>Default Location is {defaultLocation} </span>
 
     <form onSubmit={changeDefaultLocation}>
@@ -59,6 +60,8 @@ const App = () => {
           <Recent defaultLocation={defaultLocation}/>
         </div> 
       </details> 
+
+    </LocationContext.Provider>
   </div>
   )
 };
