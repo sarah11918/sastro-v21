@@ -3,10 +3,10 @@ import {useState} from 'react';
 import LocationContext from './LocationContext.jsx';
 import Regions from './Regions.jsx';
 import Notable from './Notable.jsx';
-import BirdFetchComponent from '../components/experiments/BirdFetchComponent.jsx';
+import Recent from './Recent.jsx';
 
 const App = () => {
-  const [defaultLocation, setDefaultLocation] = useState();
+  const [defaultLocation, setDefaultLocation] = useState("CA-PE-PR");
 
   function changeDefaultLocation(event) {
     event.preventDefault();
@@ -56,7 +56,7 @@ const App = () => {
       <details>
         <summary>See all birds recently observed in your area</summary>
         <div>
-          <BirdFetchComponent />
+          <Recent defaultLocation={defaultLocation}/>
         </div> 
       </details> 
   </div>
