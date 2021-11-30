@@ -1,7 +1,10 @@
 import { createContext } from 'react';
 
 const LocationContext = createContext(
-    {defaultLocation: null}
+    {
+        defaultLocation: null,
+        setDefaultLocation: () => {},
+    }
 );
 
-export default LocationContext
+export default LocationContext;

@@ -16,7 +16,7 @@ const App = () => {
   return(
     <div>
     <h3>Welcome to my bird app!</h3>
-    <LocationContext.Provider value={{ defaultLocation: defaultLocation}}>
+    <LocationContext.Provider value={{ defaultLocation: defaultLocation, setDefaultLocation: setDefaultLocation}}>
 
     <span>Default Location is {defaultLocation} </span>
 

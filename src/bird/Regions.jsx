@@ -1,7 +1,9 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import LocationContext from './LocationContext.jsx';
 
 export default function Regions() {
+  const context = useContext(LocationContext);
   const [location, setLocation] = useState("");
   const [subLocation, setSubLocation] = useState("");
   const [regions, setRegions] = useState([]);
@@ -74,6 +76,7 @@ export default function Regions() {
             onClick={() => {
               setSubLocation(region.code);
               subDivideLocations(region.code);
+              context.setDefaultLocation(region.code);
               
             }}
           >
@@ -103,7 +106,14 @@ export default function Regions() {
       let subRegionDivs = props.subRegionData.map((region) => (
         <li key={region.code} className="regionItem">
           <span style={{fontSize: "0.75em"}}>
-            {region.code} : {region.name}
+            <button
+              id="region.code"
+              onClick={() => {
+                context.setDefaultLocation(region.code);
+              }}
+              >
+              {region.code} : {region.name}
+            </button>
           </span>
         </li>
       ));
