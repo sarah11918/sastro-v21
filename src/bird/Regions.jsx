@@ -86,12 +86,15 @@ export default function Regions() {
       </li>
     ));
     return (
-      <>
-        {location && <><p  id="regions-return" style={{marginTop: "0.1em", marginBottom: "0.1em", paddingLeft: "0.1em"}}>Regions in {location}</p>
-        <p style={{marginTop: "0", fontSize:"0.5em", paddingLeft: "0.1em"}}>(click to see any available sub regions, and meanwhile, to set your default location to this region)</p></>}
+      <div className="regions">
+        {location && <>
+        
+        <h3  id="regions-return" style={{marginTop: "0.1em", marginBottom: "0.1em", paddingLeft: "0.1em"}}>Regions in {location}</h3>
+        <p style={{marginTop: "0", paddingLeft: "0.1em"}}>Click to set a default region (Currently: {context.defaultLocation})</p></>}
         
         <ul style={{display: "flex", flexWrap:"wrap", listStyleType: "none", paddingLeft: "0.1em", marginTop: "0", paddingBottom: "0"}}>{regionDivs}</ul>
-      </>
+        </div>
+    
     );
   }
 
@@ -121,8 +124,8 @@ export default function Regions() {
       ));
       return (
         <div className="regions">
-          <h3>Available sub-regions</h3>
-          <p>Click to set a default region (Currently: {context.defaultLocation})</p>
+          <h3 style={{marginTop: "0.1em", marginBottom: "0.1em", paddingLeft: "0.1em"}}>Available sub-regions</h3>
+          <p style={{marginTop: "0", paddingLeft: "0.1em"}}>Click to set a default region (Currently: {context.defaultLocation})</p>
           <div className="sub-regions">
           <ul style={{listStyleType: "none", paddingLeft: "0.1em"}}>{subRegionDivs}</ul>
           </div>
@@ -144,23 +147,6 @@ export default function Regions() {
 
   return (
     <>
-      <div>
-        {/* <details>
-          <summary style={{fontStyle: "italic"}}>What is an eBird region?</summary>
-          <div>
-          <p>
-        You can explore eBird data for an entire country, or for a smaller region like a state or province... sometimes, for a specific county or city.
-      </p>
-      <p>
-        For example, you can search bird data in all of Canada (CA), in the entire province of Ontario (CA-ON), or just in the city of Toronto (CA-ON-TO). 
-       </p> 
-        <p>The United States, Canada, and Great Britain (GB) are examples of areas where bird data is recorded by top level location, region and sub-region. Many countries, however, do not break down their regions into sub-regions. For example, Sweden's top-level country location code is SE, and Stockholm's location code is SE-AB, and there are no smaller sub-regions classified by eBird.
-      </p>
-
-          </div>
-        </details> */}
-      </div>
-     
       <h5 style={{marginBottom: "0"}}>Find a location code!</h5>
       <p style={{marginTop: "0"}}>
         Start by entering a 2-letter country code.  
