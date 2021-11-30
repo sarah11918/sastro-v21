@@ -54,7 +54,7 @@ export default function Recent() {
   return (
       <div style={{ backgroundColor: "#eef9ed", padding:"0.5em", border: "1px solid green", borderRadius: "2px"}}>
       <h3>When was each bird species last seen in your area?</h3>
-      <h5 className="birdtab">Current location set: {location} / (Default Location: {context.defaultLocation})</h5>
+      <h5 className="birdtab">Showing birds reported in: {location} / (Default Location: {context.defaultLocation})</h5>
       
       <div style={{textAlign:"center"}}>
         <button
