@@ -1,13 +1,35 @@
 import React from 'react';
+import {useState} from 'react';
+import LocationContext from './LocationContext.jsx';
 import Regions from './Regions.jsx';
 import Notable from './Notable.jsx';
 import BirdFetchComponent from '../components/experiments/BirdFetchComponent.jsx';
 
 const App = () => {
+  const [defaultLocation, setDefaultLocation] = useState();
+
+  function changeDefaultLocation(event) {
+    event.preventDefault();
+    setDefaultLocation(event.target.elements.defaultLocation.value.toUpperCase());
+  }
+
   return(
     <div>
     <h3>Welcome to my bird app!</h3>
-    <Notable />
+ 
+    <span>Default Location is {defaultLocation} </span>
+
+    <form onSubmit={changeDefaultLocation}>
+        <input
+          name="defaultLocation"
+          type="text"
+          placeholder="eBird region ID eg. CA-PE-PR"
+        
+        />
+        <button>Set a default Location</button>
+      </form>
+
+    <Notable defaultLocation={defaultLocation}/>
     <hr />
     <h2>Other Tools</h2>
     <details>
