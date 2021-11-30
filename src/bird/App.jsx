@@ -20,7 +20,7 @@ const App = () => {
 
     <span>Default Location is {defaultLocation} </span>
 
-    <form onSubmit={changeDefaultLocation}>
+    <form style={{paddingBottom:"2em"}} onSubmit={changeDefaultLocation}>
         <input
           name="defaultLocation"
           type="text"
@@ -53,14 +53,8 @@ const App = () => {
           <Regions />
         </div>
       </details>
-
-      <details>
-        <summary>See all birds recently observed in your area</summary>
-        <div>
-          <Recent defaultLocation={defaultLocation}/>
-        </div> 
-      </details> 
-
+      <hr/>
+      <Recent defaultLocation={defaultLocation}/>
     </LocationContext.Provider>
   </div>
   )

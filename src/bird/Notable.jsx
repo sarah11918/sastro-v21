@@ -98,7 +98,7 @@ export default function Notable() {
     getLocationSightings(event.target.elements.location.value.toUpperCase());
   }
   return (
-    <>
+    <div style={{ backgroundColor: "#eef9ed", padding:"0.5em", border: "1px solid green", borderRadius: "2px"}}>
       <h3>See recent reports of Rare or Unusual birds!</h3>
       <h5 className="birdtab">Showing birds reported in: {location}/ (Default Location: {context.defaultLocation})</h5>
       <div stlye={{ display: "flex" }}>
@@ -187,6 +187,6 @@ export default function Notable() {
       <NotableBirdList birdList={notableBirds} />
   
       
-    </>
+    </div>
   );
 }

@@ -33,7 +33,7 @@ export default function Recent() {
   async function changeLocationToDefaultLocation() {
     setLocation(context.defaultLocation);
     const queryLocation = context.defaultLocation
-    const recentUrl = `https://api.ebird.org/v2/data/obs/${queryLocation}/recent?back=14`
+    const recentUrl = `https://api.ebird.org/v2/data/obs/${queryLocation}/recent?back=30`
     const myHeaders = new Headers();
     myHeaders.append("X-eBirdApiToken", `${process.env.EBIRD_API_KEY}`);
 
@@ -53,7 +53,7 @@ export default function Recent() {
 
   return (
       <div style={{ backgroundColor: "#eef9ed", padding:"0.5em", border: "1px solid green", borderRadius: "2px"}}>
-      <h3>Get a list of recently-observed birds in your area!</h3>
+      <h3>When was each bird species last seen in your area?</h3>
       <h5 className="birdtab">Current location set: {location} / (Default Location: {context.defaultLocation})</h5>
       
       <div style={{textAlign:"center"}}>
@@ -76,7 +76,7 @@ export default function Recent() {
         </form>
         </div>
      
-      <h3>Reported in the last 14 days...</h3>
+      <h3>Reported in the last 30 days...</h3>
       {recentBirds.map((bird) => (
         <p>
           {bird.howMany} {bird.comName}(s) seen at {bird.obsDt.toString().slice(11)} on {bird.obsDt.toString().slice(5,10)}
