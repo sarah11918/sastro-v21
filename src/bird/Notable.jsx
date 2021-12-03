@@ -50,7 +50,7 @@ export default function Notable() {
 
   function changeLocationToPrague() {
     setNotableBirds([]);
-    setLocation("CA-PL");
+    setLocation("CZ-PL");
     getLocationSightings("CZ-PL");
   }
 
