@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import App from '../bird/App.jsx';
-
-
+import ReactCounter from '../components/ReactCounter.jsx';
+import BirdFetchComponent from '../components/experiments/BirdFetchComponent.jsx';
+import Regions from '../bird/Regions.jsx';
+import Notable from '../bird/Notable.jsx';
 import { Accordion, AccordionItem } from 'accessible-astro-components'
 import { Markdown } from 'astro/components';
 ---
@@ -45,8 +46,22 @@ panel__inner::-webkit-scrollbar-track {
 
   </style>
   <main>
-<App client:load />
 
+<Notable client:load />
+
+<h2>Other Tools</h2>
+<Accordion>
+
+  <AccordionItem header="Find the code for your eBird region">
+     <Regions client:load />
+  </AccordionItem>
+
+  <AccordionItem header="See all birds recently observed in your area">
+    <BirdFetchComponent client:load />
+  </AccordionItem>
+
+
+</Accordion>
 
   </main>
 
