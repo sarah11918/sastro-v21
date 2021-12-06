@@ -17,9 +17,10 @@ const App = () => {
     <div>
     <h3>Welcome to my bird app!</h3>
     <LocationContext.Provider value={{ defaultLocation: defaultLocation, setDefaultLocation: setDefaultLocation}}>
-  
-    
-    <h4>Current Default eBird Location Code: <span style={{fontSize: "1.25em", color:"darkgreen"}}>{defaultLocation}</span></h4>
+ 
+    <div>
+      <details>
+        <summary style={{fontSize: "0.75em", fontStyle: "italic", paddingBottom: "0.25em"}}>Set a default location</summary>
     <div className="all-details">
     <details>
       <summary>Type in a new default location code</summary>
@@ -53,6 +54,8 @@ const App = () => {
 
           </div>
         </details>
+    </div>
+    </details>
     </div>
     <Notable defaultLocation={defaultLocation}/>
     <h2>Other Tools</h2>
