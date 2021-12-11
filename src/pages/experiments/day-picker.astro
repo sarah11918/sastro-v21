@@ -6,6 +6,7 @@ import {Markdown} from 'astro/components'
 <BaseLayout title="Day Picker">
   <main>
      <Calendar client:only="react"/>
+     <hr>
     <Markdown>
     Here is the code for this page, rendering the date picker widget:
 
@@ -32,8 +33,11 @@ import {Markdown} from 'astro/components'
 
     import React, { useState } from "react";
     import DayPicker from "react-day-picker";
+    // Note: importing the the styles is NOT working.
     import "react-day-picker/lib/style.css";
-
+    // I am using the stylesheet link in my layout:
+    // <link rel="stylesheet" href="https://unpkg.com/react-day-picker/lib/style.css">
+    
     export default function Calendar() {
       const [day, setDay] = useState(null);
       const options = { 
