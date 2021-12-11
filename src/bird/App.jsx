@@ -4,6 +4,7 @@ import LocationContext from './LocationContext.jsx';
 import Regions from './Regions.jsx';
 import Notable from './Notable.jsx';
 import Recent from './Recent.jsx';
+import RegionDate from './RegionDate.jsx'
 
 const App = () => {
   const [defaultLocation, setDefaultLocation] = useState("CA-PE-PR");
@@ -60,7 +61,9 @@ const App = () => {
     <Notable defaultLocation={defaultLocation}/>
     <h2>Other Tools</h2>
       <Recent defaultLocation={defaultLocation}/>
+      <RegionDate defaultLocation={defaultLocation}/>
     </LocationContext.Provider>
+
   </div>
   )
 };
