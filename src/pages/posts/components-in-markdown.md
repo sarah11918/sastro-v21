@@ -11,62 +11,39 @@ layout: ../../layouts/MarkdownPostLayout.astro
 ---
 One of the features we've all been waiting for in the Astro rewrite has been components in Markdown! 🥳
 
-## Here's a component...
+## Here's a React Counter component...
 
 <ReactCounter client:load/>
+
+## And here's another React component...
+
 <BirdFetchComponent client:load/>
 
-```jsx
-import React from "react";
-import { useState } from "react";
+## And here's the code for this page... 
 
+Note how we import components via `setup` at the top of the Markdown page's front matter, but then everything else is just as you'd expect in Markdown:
 
-export default function BirdFetchComponent() {
-  const [recentBirds, setRecentBirds] = useState([]);
-  const [location, setLocation] = useState("");
+```astro
+---
+setup: |
+    import ReactCounter from '../../components/ReactCounter.jsx'
+    import BirdFetchComponent from '../../components/experiments/BirdFetchComponent.jsx'
 
-  async function getBirdSightings(event) {
-    event.preventDefault();
-    setLocation(event.target.elements.location.value.toUpperCase());
-    const queryLocation = event.target.elements.location.value.toUpperCase();
-    const recentUrl = `https://api.ebird.org/v2/data/obs/${queryLocation}/recent?back=14`;
-    const myHeaders = new Headers();
-    myHeaders.append("X-eBirdApiToken","API_KEY");
+title: Hello Astro v0.21.0 - Components in Markdown!
+author: Sarah
+date: 2021-11-22
+description: This is my first Markdown file written in "new" Astro... so let's see some of those components in markdown we've all been waiting for!
+layout: ../../layouts/MarkdownPostLayout.astro
+---
+One of the features we've all been waiting for in the Astro rewrite has been components in Markdown! 🥳
 
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow"
-    };
-    const response = await fetch(recentUrl, requestOptions);
-    const data = await response.json();
-    setRecentBirds(data);
-  }
+## Here's a React Counter component...
 
-  return (
-    <div style={{ backgroundColor: "#eef9ed", padding:"0.5em", border: "1px solid green", borderRadius: "2px"}}>
-      <h3>Get a list of recently-observed birds in your area!</h3>
-      <h5 className="birdtab">Current location set: {location} </h5>
-      
-      <form onSubmit={getBirdSightings}>
-        <input
-          name="location"
-          type="text"
-          placeholder="eBird region ID eg. CA-PE"
-          style={{ textTransform: "uppercase" }}
-        />
-        <button> See the birds!</button>
-      </form>
+<ReactCounter client:load/>
 
-      <h3>Reported in the last 14 days...</h3>
-      {recentBirds.map((bird) => (
-        <p>
-          {bird.howMany} {bird.comName}(s) seen at {bird.obsDt.toString().slice(11)} on {bird.obsDt.toString().slice(5,10)}
-        </p>
-      ))}
-    </div>
-  );
-}
+## And here's another React component...
+
+<BirdFetchComponent client:load/>
+
 ```
 
-Did it work??
