@@ -32,10 +32,12 @@ Why do we fall for this one over and over again? Your technically-perfect React 
 
 Check to see that you have specified a hydration method with a `client:*` directive!
 
-If you render `<MyAmazingReactComponentThatShouldTotallyWork />` in an Astro page, the way you would in a React component, you'll only get the static HTML representation of your component, with no interactivity. To include your comopnents functionality, be sure to specify one of the available options such as:
+If you render `<MyAmazingReactComponentThatShouldTotallyWork />` in an Astro page, the way you would in a React component, you'll only get the static HTML representation of your component, with no interactivity. To include your component's functionality, be sure to specify one of the available options such as:
 
 `<MyAmazingReactComponentThatShouldTotallyWork client:load />` (to load instantly)
 or
-`<MyAmazingReactComponentThatShouldTotallyWork client:visible />` (to load only when the component becomes visible on the page, for example, something lower on the page that doesn't need to load until / unless the user scrolls down to it)
+`<MyAmazingReactComponentThatShouldTotallyWork client:visible />` (to load only when the component becomes visible on the page. This is handy for something lower on the page that doesn't need to load until / unless the user scrolls down to it)
 
-These are the top three items on my checklist when a React component isn't working, especially if I've been writing my React code separately in a different environment, outside of my main Astro project with the intention of adding the files later. I mean, sure, there *could* be a flaw in my React code, but I can sometimes save myself a whole lot of pain and suffering if I just check these things first!
+These are the top three items on my checklist when a React component isn't working, especially if I've been writing my React code separately in a different environment, outside of my main Astro project with the intention of adding the files later. 
+
+I mean, sure, there *could* be a flaw in my React code, but I can sometimes save myself a whole lot of pain and suffering if I just check these things first!
