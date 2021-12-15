@@ -28,9 +28,10 @@ allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     ```js
     ---
-    let allPosts = Astro.fetchContent('./posts/*.md');
+    import BaseLayout from '../layouts/BaseLayout.astro';
+    import { Markdown } from 'astro/components'
+    let allPosts = Astro.fetchContent('../pages/posts/*.md');
     allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
-    Astro.fetchContent('src/pages/posts/*.md')
     ---
     <div>
       {allPosts.slice(0, 5).map((post) => (
