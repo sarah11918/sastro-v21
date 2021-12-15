@@ -10,7 +10,7 @@ date: '2016-10-04'
 thumb_img_path: images/sharedalbum.png
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 "Shared Albums" in Google Photos are great for collaborating. I finally got Joe on board with adding his travel photos directly to my shared albums, and it worked perfectly! So, if you think you'll want this set up where multiple people contribute to the same album, you should probably just create a "new shared album" right off the bat, right? WRONG!
 <!-- more -->

@@ -8,7 +8,7 @@ date: '2017-07-06'
 thumb_img_path: images/chromebookleaf.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 The Samsung Chromebook Pro is here!
 

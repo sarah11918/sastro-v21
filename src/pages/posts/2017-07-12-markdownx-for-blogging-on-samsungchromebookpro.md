@@ -8,7 +8,7 @@ date: '2017-07-12'
 thumb_img_path: images/markdownxcrop.png
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 I sat down to write a post about setting up my Twitter client on my phone, but this post quickly became about the app I'm using to write this post, instead.
 

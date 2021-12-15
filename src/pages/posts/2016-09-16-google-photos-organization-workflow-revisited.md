@@ -7,7 +7,7 @@ excerpt: >-
   and here's what I've settled on for now
 date: "2016-09-16"
 
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 
 Well, it finally happened: no more Picasa Web Albums! I've spent a few months trying to come up with a decent Google Photos workflow and Picasa alternative, and here's what I've settled on (for now)...

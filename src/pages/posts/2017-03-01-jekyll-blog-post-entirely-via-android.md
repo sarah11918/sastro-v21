@@ -12,7 +12,7 @@ date: '2017-03-01'
 thumb_img_path:
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 The Samsung Chromebook Plus is already out in the wild and available for purchase. With the calendar flipping to March today, I can now say that the PRO model will be available _next month_!
 

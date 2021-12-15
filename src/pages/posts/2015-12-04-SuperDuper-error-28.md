@@ -8,7 +8,7 @@ excerpt: >-
   internal hard drive.
 hide_header: false
 template: post
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 Yesterday, (aka "The Day that Tech Stopped Working") after a string of tech annoyances, I figured the safest thing to do was to quickly run a backup. (I don't have automated backups, but I do run a SuperDuper backup a few times per month, and especially whenever I've made major changes to my file system.) Somewhat befitting the crazy I had, for the first time, running a SuperDuper backup failed. 
 

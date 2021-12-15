@@ -7,7 +7,7 @@ const postDate = content.date.slice(0,10);
   <main>
     <p><em>{content.description}</em></p>
     <h1>{content.title}</h1>
-    <p>Written by: {content.author} on {postDate}</p>
+    <h3>{postDate}</h3>
     <article>
       <slot />
     </article>

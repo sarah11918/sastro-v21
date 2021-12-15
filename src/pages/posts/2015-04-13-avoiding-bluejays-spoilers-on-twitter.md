@@ -6,7 +6,7 @@ excerpt: ' I''ve been meaning to write to explain exactly how my super-awesome-s
 hide_header: false
 template: post
 thumb_img_path: images/yfscreenshot.jpg
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 
 In honour of Home Opening Day for the Toronto Blue Jays (and in lieu of the writing I _should_ be doing today), here's a post I've been meaning to write to explain exactly how my super-awesome-spoiler-proof Twitter system works.

@@ -13,7 +13,7 @@ excerpt: >-
   later, I'm pleased to report that it also does the second very well.
 hide_header: false
 template: post
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 There are two major criteria I have for a Twitter client, given the way that I use Twitter.
 1. Keep track (and hold on to a lengthy backlog) of unread tweets.

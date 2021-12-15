@@ -11,7 +11,7 @@ date: "2016-10-09"
 thumb_img_path: images/picasatweet.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 
 It's been exactly two months since the day my Desktop Picasa app stopped connecting to my Google account. The secret handshakes no longer worked. The known tricks for appending URLs were useless. Whether I was ready to or not, I _had_ to move on.

@@ -8,7 +8,7 @@ thumb_img_path: images/fastingcrop.png
 hide_header: false
 template: post
 content_img_path: images/chromebookleaf.jpg
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/OldMarkdownPostLayout.astro
 ---
 A quick post to announce a very exciting thing:
 
