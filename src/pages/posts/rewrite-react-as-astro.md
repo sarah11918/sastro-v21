@@ -4,6 +4,7 @@ author: Sarah
 date: 2021-09-09
 description: I'd been using a lot of components in my Astro blog, but I realized that they were almost all *React* components, because that's what I know. So, I wanted to try reproducing some functionality by replacing a React component with a corresponding Astro component.
 layout: ../../layouts/MarkdownPostLayout.astro
+slug: rewrite-react-as-astro
 ---
 # Rewriting a React/JSX Component as an Astro Component
 

@@ -4,6 +4,7 @@ author: Sarah
 date: 2021-07-31
 description: Using flex-grow to create a "spacer" div to solve the problem of a footer displaying halfway down a page when you don't have enough content to fill the entire height of the screen.
 layout: ../../layouts/MarkdownPostLayout.astro
+slug: flex-responsive-footer
 ---
 
 Because some of my pages are just short testing pages, maybe containing a single React component, there isn't always enough content to push the footer right down to the bottom of the page. (See my [About](/about) page for an example.)

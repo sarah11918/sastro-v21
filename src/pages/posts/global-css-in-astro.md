@@ -4,6 +4,7 @@ author: Sarah
 date: 2021-07-30
 description: A comparison of what happened (spoiler alert -- it got weird!) when I tried to import styles/global.css into my layout.astro file.
 layout: ../../layouts/MarkdownPostLayout.astro
+slug: global-css-in-astro
 ---
 
 Full disclosure: I have no idea whether what I was doing was _supposed_ to work, but, it didn't _not_ work (by all appearances)... until I ran Lighthouse and realized that I had no \<!DOCTYPE html\> in my HTML output.
