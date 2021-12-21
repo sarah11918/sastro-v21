@@ -6,7 +6,7 @@ import {GET_WEATHER_QUERY} from "./Queries.js";
 function OtherWeather(){
 
 
-  const [city, setCity] = useState("Summerside");
+  const [city, setCity] = useState("");
   const [citySearched, setCitySearched] = useState(city)
   const [getWeather, {loading, error, data}] = useLazyQuery(
      GET_WEATHER_QUERY,
@@ -31,9 +31,10 @@ function OtherWeather(){
         <button onClick={() => {
           setCitySearched(city);
           getWeather();
-        }}>Get Weather in {city}</button>
-      <hr/>
-
+        }}>Click to get Weather in {city}</button>
+      <br/>
+      <br/>
+        <span>Preset Cities: </span>
 
         <button onClick={() => {
           setCitySearched("Toronto")

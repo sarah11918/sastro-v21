@@ -1,6 +1,5 @@
 import React from "react";
 import {ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
-// import Weather from "./Weather.jsx";
 import OtherWeather from "./OtherWeather.jsx";
 
 function ApolloApp() {
@@ -14,7 +13,6 @@ function ApolloApp() {
     <ApolloProvider client={client}>
       <h1> Weather App </h1>
       <OtherWeather />
-      {/* <Weather /> */}
     </ApolloProvider>
   );
 }
