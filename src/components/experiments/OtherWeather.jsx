@@ -5,15 +5,9 @@ import {GET_WEATHER_QUERY} from "./Queries.js";
 
 function OtherWeather(){
 
-
-  const [city, setCity] = useState("");
-  const [citySearched, setCitySearched] = useState(city)
+  const [citySearched, setCitySearched] = useState("")
   const [getWeather, {loading, error, data}] = useLazyQuery(
-     GET_WEATHER_QUERY,
-    {
-    variables: {name:citySearched},
-    }
-  )
+     GET_WEATHER_QUERY )
 
   return(
     <div className="weather">
@@ -21,29 +15,26 @@ function OtherWeather(){
       <input 
         type="text" 
         placeholder="City e.g. Toronto"
-        value={city}
+        value={citySearched}
       
         onChange={(event) => {
-          setCity(event.target.value)
+          setCitySearched(event.target.value)
         }}
       />
 
         <button onClick={() => {
-          setCitySearched(city);
-          getWeather();
-        }}>Click to get Weather in {city}</button>
+          getWeather({variables: {name: citySearched}});
+        }}>Click to get Weather in {citySearched}</button>
       <br/>
       <br/>
         <span>Preset Cities: </span>
 
         <button onClick={() => {
-          setCitySearched("Toronto")
-          getWeather()
+          getWeather({variables: {name: "Toronto"}})
         }
       } >Get Toronto Weather</button>
       <button onClick={() => {
-          setCitySearched("Milan")
-          getWeather()
+          getWeather({variables: {name: "Milan"}})
        }
      } >Get Milan Weather</button>
 
