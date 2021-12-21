@@ -15,8 +15,10 @@
     "astro": "^0.21.12"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.6",
     "@astropub/icons": "^0.1.1",
     "astro-feather-icons": "^0.1.4",
+    "graphql": "^16.2.0",
     "react-day-picker": "^7.4.10"
   }
 }

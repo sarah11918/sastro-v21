@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ApolloApp from '../../components/experiments/ApolloApp.jsx';
+
+---
+<BaseLayout title="Apollo GraphQL client">
+  <main>
+  <ApolloApp client:only="react" />
+  </main>
+</BaseLayout>
