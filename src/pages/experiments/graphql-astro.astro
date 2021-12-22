@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {getWeather} from '../../components/experiments/api.js';
+const {data} = await getWeather();
+---
+<BaseLayout title = "GraphQL API fetch in Astro" >
+    <main>
+    <p>test</p>
+
+    </main>
+</BaseLayout>
