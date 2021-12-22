@@ -1,11 +1,45 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import {getWeather} from '../../components/experiments/api.js';
-const {data} = await getWeather();
+async function fetchApi(query, {variables} = {}) {
+    const headers = {'Content-Type':'application/json'};
+    const response = await fetch("https://graphql-weather-api.herokuapp.com", {
+        method:'POST',
+        headers,
+        body:JSON.stringify({query, variables}),
+    });
+    const json = await response.json();
+    if(json.errors){
+        console.log(json.errors);
+        throw new Error('Failed to fetch API');
+    }
+    return json.data;
+}
+
+async function getWeather(){
+    const data = await fetchApi(`
+    {
+        getCityByName(name: "Toronto"){
+            name
+            country
+            weather {
+                summary {
+                    description
+                }
+            }
+        }
+    }
+    `)
+    console.log(data)
+    return data
+}
+const weather = await getWeather();
+
+
 ---
 <BaseLayout title = "GraphQL API fetch in Astro" >
     <main>
-    <p>test</p>
-
+    <p>Fetching Toronto's Weather via https://graphql-weather-api.herokuapp.com</p>
+    <p>{weather.getCityByName.name}, {weather.getCityByName.country}<p>
+    <p>{weather.getCityByName.weather.summary.description}</p>
     </main>
 </BaseLayout>
