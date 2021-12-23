@@ -12,11 +12,11 @@
          this.querySelectorAll('#box').forEach((box,index)=>BoxAnimation.push(box.animate(
          [
             {transform: 'translateX(0px)'},
-            {transform: 'translateX(200px) rotate(360deg)'},
+            {transform: 'translateX(200px) '},
             {transform: 'translateX(0px)'}
          ],
          {
-            duration: 5500,
+            duration: 8500,
             iterations:'Infinity',
             timingFunction:"ease-out",
             delay: index*1000,
@@ -46,15 +46,16 @@
       <Box id='box'/>
       <Box id='box'/>
       <Btn id='btn'>
-         Start/Stop
+         Start/Stop the animation
       </Btn>
   </AnimatedWindow>
 
+
   <style>
     #box{
-      width:50px;
-      height:50px;
-      background-color:green;
+      width:80px;
+      height:80px;
+      background-image:url("https://lh3.googleusercontent.com/pw/AM-JKLUwoJunFVUl0-53MQ2wr8-kKjtUCgbZ2AS5hJg7pLtMM-vz8bL9jrDEKxx68OKZT8Rndip28WehHVZwX63UrsE13B5O7o2wys7TswfzAXp2YZAkBJVu1hyk2thtIDPg1YW0-FEZi8h5vzV5uLY1WNunhw=w80-no?.jpg");
       margin:5px;
     }
   </style>

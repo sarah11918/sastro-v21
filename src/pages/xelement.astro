@@ -6,7 +6,8 @@ import Clock from '../components/Clock.astro'
 import Fetch from '../components/Fetch.astro'
 import ImportScript from '../components/ImportScript.astro'
 import TypeIt from '../components/TypeIt.astro'
-const {div:Box, button:Button} = XE
+
+const {div:Surprise, button:Button} = XE
 
 
 ---
@@ -16,11 +17,21 @@ const {div:Box, button:Button} = XE
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>XElement</title>
   <ImportScript/>
 </head>
+
+
 <body>
-  <Box 
+ <TypeIt>
+    Hello, this is XElement <br>
+    Prepare to be assimilated. <br>
+    Resistance is futile.
+  </TypeIt>
+
+    <Counter/>
+
+  <Surprise 
   @do={async function(element,store,){
     console.log(store)
     const confetti = await import('https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js')
@@ -29,33 +40,39 @@ const {div:Box, button:Button} = XE
   @visible={(element,store,opts={threshold:[0.25,0.5,1]})=>{console.log('visible',this)}}
   @resize={(element,store)=>console.log('resized',this)}
   @click:once={(ev,store,opt={useCapture:'true'})=>{
-    this.textContent='world'
+    this.textContent='SURPRISE!!!!!!!!!!!!!!!!!'
 
     confetti()
     console.log(this,store.lib.a); }}
   @observe={(element,store)=>{console.log('observe',this)}}
   @animate={
   ({transform:'translateX(0)'},
-  {transform:'translateX(100px)'},)
+  {transform:'translateX(40vw)'},)
   }
   @timings={
    ({
-     duration:1000,
-     fill:'both'
+     duration:2000,
+     fill:'both',
+     delay: 9000,
    })
   }
   >
-    Hello
-  </Box>
-  <Counter/>
+    Click this text for a ... 
+  </Surprise>
+
+
+
 
   <ControlAnimation />
+
+
   <Clock/>
-    <Fetch/>
-    <TypeIt>
-      Hello from the Index <br>
-      A multiLine Text
-    </TypeIt>
+
+
+  <Fetch/>
+
+ 
 </div>
+
 </body>
 </html>
