@@ -1,0 +1,1199 @@
+[
+ {
+   "id": 1,
+   "comName": "Tufted Duck",
+   "locationDescription": "Oulu--Pikisaari",
+   "regionCode": "FI-14",
+   "dateFirstSeen": "20 Jun 2006"
+ },
+ {
+   "id": 2,
+   "comName": "Common Gull",
+   "locationDescription": "Oulu--Pikisaari",
+   "regionCode": "FI-14",
+   "dateFirstSeen": "20 Jun 2006"
+ },
+ {
+   "id": 3,
+   "comName": "Herring Gull",
+   "locationDescription": "Oulu--Pikisaari",
+   "regionCode": "FI-14",
+   "dateFirstSeen": "20 Jun 2006"
+ },
+ {
+   "id": 4,
+   "comName": "Great-tailed Grackle",
+   "locationDescription": "Cozumel",
+   "regionCode": "MX-ROO",
+   "dateFirstSeen": "03 Feb 2008"
+ },
+ {
+   "id": 5,
+   "comName": "Graylag Goose",
+   "locationDescription": "Reykjavík--Tjörnin pond",
+   "regionCode": "IS-1",
+   "dateFirstSeen": "30 Mar 2009"
+ },
+ {
+   "id": 6,
+   "comName": "Whooper Swan",
+   "locationDescription": "Reykjavík--Tjörnin pond",
+   "regionCode": "IS-1",
+   "dateFirstSeen": "30 Mar 2009"
+ },
+ {
+   "id": 7,
+   "comName": "Mallard",
+   "locationDescription": "Reykjavík--Tjörnin pond",
+   "regionCode": "IS-1",
+   "dateFirstSeen": "30 Mar 2009"
+ },
+ {
+   "id": 8,
+   "comName": "Common Eider",
+   "locationDescription": "Reykjavík--Tjörnin pond",
+   "regionCode": "IS-1",
+   "dateFirstSeen": "30 Mar 2009"
+ },
+ {
+   "id": 9,
+   "comName": "Rock Pigeon",
+   "locationDescription": "Reykjavík--Tjörnin pond",
+   "regionCode": "IS-1",
+   "dateFirstSeen": "30 Mar 2009"
+ },
+ {
+   "id": 10,
+   "comName": "Mute Swan",
+   "locationDescription": "Scaniaparken",
+   "regionCode": "SE-M",
+   "dateFirstSeen": "15 Sep 2014"
+ },
+ {
+   "id": 11,
+   "comName": "Eurasian Magpie",
+   "locationDescription": "Scaniaparken",
+   "regionCode": "SE-M",
+   "dateFirstSeen": "15 Sep 2014"
+ },
+ {
+   "id": 12,
+   "comName": "Eurasian Jackdaw",
+   "locationDescription": "Scaniaparken",
+   "regionCode": "SE-M",
+   "dateFirstSeen": "15 Sep 2014"
+ },
+ {
+   "id": 13,
+   "comName": "Hooded Crow",
+   "locationDescription": "Scaniaparken",
+   "regionCode": "SE-M",
+   "dateFirstSeen": "15 Sep 2014"
+ },
+ {
+   "id": 14,
+   "comName": "Eurasian Coot",
+   "locationDescription": "Lac d'Annecy--Promenade Jacquet / Ponton Les Libellules et Les Mouettes",
+   "regionCode": "FR-V",
+   "dateFirstSeen": "27 Sep 2014"
+ },
+ {
+   "id": 15,
+   "comName": "Black-headed Gull",
+   "locationDescription": "Lac d'Annecy--Promenade Jacquet / Ponton Les Libellules et Les Mouettes",
+   "regionCode": "FR-V",
+   "dateFirstSeen": "27 Sep 2014"
+ },
+ {
+   "id": 16,
+   "comName": "Carrion Crow",
+   "locationDescription": "Lac d'Annecy--Promenade Jacquet / Ponton Les Libellules et Les Mouettes",
+   "regionCode": "FR-V",
+   "dateFirstSeen": "27 Sep 2014"
+ },
+ {
+   "id": 17,
+   "comName": "House Sparrow",
+   "locationDescription": "Lac d'Annecy--Promenade Jacquet / Ponton Les Libellules et Les Mouettes",
+   "regionCode": "FR-V",
+   "dateFirstSeen": "27 Sep 2014"
+ },
+ {
+   "id": 18,
+   "comName": "Gray Heron",
+   "locationDescription": "Wiener Stadtpark",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "17 May 2015"
+ },
+ {
+   "id": 19,
+   "comName": "White Wagtail",
+   "locationDescription": "Wiener Stadtpark",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "17 May 2015"
+ },
+ {
+   "id": 20,
+   "comName": "Indian Peafowl",
+   "locationDescription": "Ft Lauderdale",
+   "regionCode": "US-FL",
+   "dateFirstSeen": "26 Feb 2016"
+ },
+ {
+   "id": 21,
+   "comName": "Turkey Vulture",
+   "locationDescription": "Dr. Von D. Mizell-Eula Johnson SP",
+   "regionCode": "US-FL",
+   "dateFirstSeen": "28 Feb 2016"
+ },
+ {
+   "id": 22,
+   "comName": "Brown Pelican",
+   "locationDescription": "San Juan, PR",
+   "regionCode": "PR-SJ",
+   "dateFirstSeen": "02 Mar 2016"
+ },
+ {
+   "id": 23,
+   "comName": "Ruffed Grouse",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 Apr 2016"
+ },
+ {
+   "id": 24,
+   "comName": "Eastern Wood-Pewee",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "19 Jun 2016"
+ },
+ {
+   "id": 25,
+   "comName": "Barnacle Goose",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 26,
+   "comName": "Common Wood-Pigeon",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 27,
+   "comName": "Great Cormorant",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 28,
+   "comName": "Eurasian Blue Tit",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 29,
+   "comName": "Eurasian Nuthatch",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 30,
+   "comName": "Mistle Thrush",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 31,
+   "comName": "Song Thrush",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 32,
+   "comName": "Eurasian Blackbird",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 33,
+   "comName": "Eurasian Tree Sparrow",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 34,
+   "comName": "European Greenfinch",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 35,
+   "comName": "European Goldfinch",
+   "locationDescription": "Stockholm Eriksdalslunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "14 Sep 2016"
+ },
+ {
+   "id": 36,
+   "comName": "Red-tailed Hawk",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "23 Jan 2017"
+ },
+ {
+   "id": 37,
+   "comName": "Semipalmated Plover",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 38,
+   "comName": "Semipalmated Sandpiper",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 39,
+   "comName": "Greater Yellowlegs",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 40,
+   "comName": "Lesser Yellowlegs",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 41,
+   "comName": "Northern Gannet",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 42,
+   "comName": "Blue Jay",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 43,
+   "comName": "American Crow",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 44,
+   "comName": "Black-capped Chickadee",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 45,
+   "comName": "Song Sparrow",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 46,
+   "comName": "Red-winged Blackbird",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Jul 2017"
+ },
+ {
+   "id": 47,
+   "comName": "Northern Cardinal",
+   "locationDescription": "Oshawa Civic",
+   "regionCode": "CA-ON",
+   "dateFirstSeen": "18 Sep 2017"
+ },
+ {
+   "id": 48,
+   "comName": "Fieldfare",
+   "locationDescription": "Trädgårds Föreningen",
+   "regionCode": "SE-O",
+   "dateFirstSeen": "09 Oct 2017"
+ },
+ {
+   "id": 49,
+   "comName": "Common Chaffinch",
+   "locationDescription": "Trädgårds Föreningen",
+   "regionCode": "SE-O",
+   "dateFirstSeen": "09 Oct 2017"
+ },
+ {
+   "id": 50,
+   "comName": "Brambling",
+   "locationDescription": "Trädgårds Föreningen",
+   "regionCode": "SE-O",
+   "dateFirstSeen": "09 Oct 2017"
+ },
+ {
+   "id": 51,
+   "comName": "White-throated Dipper",
+   "locationDescription": "Munich Maximiliansanlagen",
+   "regionCode": "DE-BY",
+   "dateFirstSeen": "16 Oct 2017"
+ },
+ {
+   "id": 52,
+   "comName": "Hawfinch",
+   "locationDescription": "Chateau de Rochegude",
+   "regionCode": "FR-U",
+   "dateFirstSeen": "27 Oct 2017"
+ },
+ {
+   "id": 53,
+   "comName": "Mandarin Duck",
+   "locationDescription": "Donaupark",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "18 Nov 2017"
+ },
+ {
+   "id": 54,
+   "comName": "Eurasian Moorhen",
+   "locationDescription": "Donaupark",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "18 Nov 2017"
+ },
+ {
+   "id": 55,
+   "comName": "American Black Duck",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Mar 2018"
+ },
+ {
+   "id": 56,
+   "comName": "Mourning Dove",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Mar 2018"
+ },
+ {
+   "id": 57,
+   "comName": "Iceland Gull",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Mar 2018"
+ },
+ {
+   "id": 58,
+   "comName": "Great Black-backed Gull",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Mar 2018"
+ },
+ {
+   "id": 59,
+   "comName": "Downy Woodpecker",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Mar 2018"
+ },
+ {
+   "id": 60,
+   "comName": "Red-breasted Nuthatch",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Mar 2018"
+ },
+ {
+   "id": 61,
+   "comName": "American Robin",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Mar 2018"
+ },
+ {
+   "id": 62,
+   "comName": "Common Merganser",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "29 Mar 2018"
+ },
+ {
+   "id": 63,
+   "comName": "Bald Eagle",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "29 Mar 2018"
+ },
+ {
+   "id": 64,
+   "comName": "Common Raven",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "29 Mar 2018"
+ },
+ {
+   "id": 65,
+   "comName": "Cedar Waxwing",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "29 Mar 2018"
+ },
+ {
+   "id": 66,
+   "comName": "American Goldfinch",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "29 Mar 2018"
+ },
+ {
+   "id": 67,
+   "comName": "Canada Goose",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 Mar 2018"
+ },
+ {
+   "id": 68,
+   "comName": "Brant",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 Mar 2018"
+ },
+ {
+   "id": 69,
+   "comName": "Greater Scaup",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 Mar 2018"
+ },
+ {
+   "id": 70,
+   "comName": "Barrow's Goldeneye",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 Mar 2018"
+ },
+ {
+   "id": 71,
+   "comName": "Common Goldeneye",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 Mar 2018"
+ },
+ {
+   "id": 72,
+   "comName": "Great Blue Heron",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "02 Apr 2018"
+ },
+ {
+   "id": 73,
+   "comName": "European Starling",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "03 Apr 2018"
+ },
+ {
+   "id": 74,
+   "comName": "Common Grackle",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "03 Apr 2018"
+ },
+ {
+   "id": 75,
+   "comName": "American Wigeon",
+   "locationDescription": "St. John's--Kenny's Pond",
+   "regionCode": "CA-NL",
+   "dateFirstSeen": "10 Apr 2018"
+ },
+ {
+   "id": 76,
+   "comName": "Osprey",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "21 Apr 2018"
+ },
+ {
+   "id": 77,
+   "comName": "Black Scoter",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "22 Apr 2018"
+ },
+ {
+   "id": 78,
+   "comName": "Belted Kingfisher",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "22 Apr 2018"
+ },
+ {
+   "id": 79,
+   "comName": "Red-breasted Merganser",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "24 Apr 2018"
+ },
+ {
+   "id": 80,
+   "comName": "Lesser Scaup",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "26 Apr 2018"
+ },
+ {
+   "id": 81,
+   "comName": "Northern Flicker",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "05 May 2018"
+ },
+ {
+   "id": 82,
+   "comName": "Surf Scoter",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "06 May 2018"
+ },
+ {
+   "id": 83,
+   "comName": "Ring-billed Gull",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "06 May 2018"
+ },
+ {
+   "id": 84,
+   "comName": "Double-crested Cormorant",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "06 May 2018"
+ },
+ {
+   "id": 85,
+   "comName": "Yellow-bellied Sapsucker",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "06 May 2018"
+ },
+ {
+   "id": 86,
+   "comName": "Golden-crowned Kinglet",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "08 May 2018"
+ },
+ {
+   "id": 87,
+   "comName": "Blackpoll Warbler",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "08 May 2018"
+ },
+ {
+   "id": 88,
+   "comName": "Palm Warbler",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "08 May 2018"
+ },
+ {
+   "id": 89,
+   "comName": "Yellow-rumped Warbler",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "08 May 2018"
+ },
+ {
+   "id": 90,
+   "comName": "Black-throated Green Warbler",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "08 May 2018"
+ },
+ {
+   "id": 91,
+   "comName": "Black-backed Woodpecker",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "12 May 2018"
+ },
+ {
+   "id": 92,
+   "comName": "Purple Finch",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "12 May 2018"
+ },
+ {
+   "id": 93,
+   "comName": "Piping Plover",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "16 May 2018"
+ },
+ {
+   "id": 94,
+   "comName": "Green-winged Teal",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "18 May 2018"
+ },
+ {
+   "id": 95,
+   "comName": "Hairy Woodpecker",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "18 May 2018"
+ },
+ {
+   "id": 96,
+   "comName": "Yellow Warbler",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "18 May 2018"
+ },
+ {
+   "id": 97,
+   "comName": "Common Yellowthroat",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "21 Jun 2018"
+ },
+ {
+   "id": 98,
+   "comName": "Ruddy Turnstone",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "15 Aug 2018"
+ },
+ {
+   "id": 99,
+   "comName": "Bonaparte's Gull",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "15 Aug 2018"
+ },
+ {
+   "id": 100,
+   "comName": "Black-bellied Plover",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "23 Aug 2018"
+ },
+ {
+   "id": 101,
+   "comName": "Caspian Tern",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "28 Aug 2018"
+ },
+ {
+   "id": 102,
+   "comName": "Common Tern",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "28 Aug 2018"
+ },
+ {
+   "id": 103,
+   "comName": "White-rumped Sandpiper",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "31 Aug 2018"
+ },
+ {
+   "id": 104,
+   "comName": "Spotted Sandpiper",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "31 Aug 2018"
+ },
+ {
+   "id": 105,
+   "comName": "Least Sandpiper",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "01 Sep 2018"
+ },
+ {
+   "id": 106,
+   "comName": "Great Tit",
+   "locationDescription": "Volkspark Friedrichshain",
+   "regionCode": "DE-BE",
+   "dateFirstSeen": "18 Oct 2018"
+ },
+ {
+   "id": 107,
+   "comName": "Great Spotted Woodpecker",
+   "locationDescription": "Trädgårds Föreningen",
+   "regionCode": "SE-O",
+   "dateFirstSeen": "01 Nov 2018"
+ },
+ {
+   "id": 108,
+   "comName": "European Robin",
+   "locationDescription": "Trädgårds Föreningen",
+   "regionCode": "SE-O",
+   "dateFirstSeen": "01 Nov 2018"
+ },
+ {
+   "id": 109,
+   "comName": "Northern Shrike",
+   "locationDescription": "Harmony Valley CA",
+   "regionCode": "CA-ON",
+   "dateFirstSeen": "25 Dec 2018"
+ },
+ {
+   "id": 110,
+   "comName": "American Tree Sparrow",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "09 Mar 2019"
+ },
+ {
+   "id": 111,
+   "comName": "Dark-eyed Junco",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "12 Mar 2019"
+ },
+ {
+   "id": 112,
+   "comName": "White-throated Sparrow",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "12 Mar 2019"
+ },
+ {
+   "id": 113,
+   "comName": "Killdeer",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "11 Apr 2019"
+ },
+ {
+   "id": 114,
+   "comName": "Chipping Sparrow",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "02 May 2019"
+ },
+ {
+   "id": 115,
+   "comName": "Savannah Sparrow",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "02 May 2019"
+ },
+ {
+   "id": 116,
+   "comName": "Swamp Sparrow",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "02 May 2019"
+ },
+ {
+   "id": 117,
+   "comName": "Long-tailed Duck",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "11 May 2019"
+ },
+ {
+   "id": 118,
+   "comName": "Ruby-throated Hummingbird",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "13 May 2019"
+ },
+ {
+   "id": 119,
+   "comName": "Chestnut-sided Warbler",
+   "locationDescription": "Parc du Mt-Royal",
+   "regionCode": "CA-QC",
+   "dateFirstSeen": "21 May 2019"
+ },
+ {
+   "id": 120,
+   "comName": "White-breasted Nuthatch",
+   "locationDescription": "Parc du Mt-Royal",
+   "regionCode": "CA-QC",
+   "dateFirstSeen": "22 May 2019"
+ },
+ {
+   "id": 121,
+   "comName": "Swainson's Thrush",
+   "locationDescription": "Parc du Mt-Royal",
+   "regionCode": "CA-QC",
+   "dateFirstSeen": "22 May 2019"
+ },
+ {
+   "id": 122,
+   "comName": "Black-and-white Warbler",
+   "locationDescription": "Parc du Mt-Royal",
+   "regionCode": "CA-QC",
+   "dateFirstSeen": "22 May 2019"
+ },
+ {
+   "id": 123,
+   "comName": "Blackburnian Warbler",
+   "locationDescription": "Parc du Mt-Royal",
+   "regionCode": "CA-QC",
+   "dateFirstSeen": "22 May 2019"
+ },
+ {
+   "id": 124,
+   "comName": "Sandhill Crane",
+   "locationDescription": "Champlain Road, Tiny ON",
+   "regionCode": "CA-ON",
+   "dateFirstSeen": "13 Jun 2019"
+ },
+ {
+   "id": 125,
+   "comName": "Common Loon",
+   "locationDescription": "Champlain Road, Tiny ON",
+   "regionCode": "CA-ON",
+   "dateFirstSeen": "14 Jun 2019"
+ },
+ {
+   "id": 126,
+   "comName": "Brown Thrasher",
+   "locationDescription": "Champlain Road, Tiny ON",
+   "regionCode": "CA-ON",
+   "dateFirstSeen": "10 Sep 2019"
+ },
+ {
+   "id": 127,
+   "comName": "Common Chiffchaff",
+   "locationDescription": "Mariehamn--Lilla holmen",
+   "regionCode": "FI-01",
+   "dateFirstSeen": "24 Sep 2019"
+ },
+ {
+   "id": 128,
+   "comName": "Eurasian Wigeon",
+   "locationDescription": "Tantolunden",
+   "regionCode": "SE-AB",
+   "dateFirstSeen": "27 Sep 2019"
+ },
+ {
+   "id": 129,
+   "comName": "Gadwall",
+   "locationDescription": "Espoo--Laajalahti, Maarin lintutorni",
+   "regionCode": "FI-18",
+   "dateFirstSeen": "30 Sep 2019"
+ },
+ {
+   "id": 130,
+   "comName": "Northern Lapwing",
+   "locationDescription": "Espoo--Laajalahti, Maarin lintutorni",
+   "regionCode": "FI-18",
+   "dateFirstSeen": "30 Sep 2019"
+ },
+ {
+   "id": 131,
+   "comName": "Meadow Pipit",
+   "locationDescription": "Espoo--Laajalahti, Maarin lintutorni",
+   "regionCode": "FI-18",
+   "dateFirstSeen": "30 Sep 2019"
+ },
+ {
+   "id": 132,
+   "comName": "Reed Bunting",
+   "locationDescription": "Espoo--Laajalahti, Maarin lintutorni",
+   "regionCode": "FI-18",
+   "dateFirstSeen": "30 Sep 2019"
+ },
+ {
+   "id": 133,
+   "comName": "Great Crested Grebe",
+   "locationDescription": "2 Otaranta, Espoo, FI (60.184, 24.837)",
+   "regionCode": "FI-18",
+   "dateFirstSeen": "02 Oct 2019"
+ },
+ {
+   "id": 134,
+   "comName": "Eurasian Collared-Dove",
+   "locationDescription": "Wiener Prater",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "10 Oct 2019"
+ },
+ {
+   "id": 135,
+   "comName": "Middle Spotted Woodpecker",
+   "locationDescription": "Wiener Prater",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "10 Oct 2019"
+ },
+ {
+   "id": 136,
+   "comName": "Syrian Woodpecker",
+   "locationDescription": "Wiener Prater",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "10 Oct 2019"
+ },
+ {
+   "id": 137,
+   "comName": "Coal Tit",
+   "locationDescription": "Wiener Prater",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "10 Oct 2019"
+ },
+ {
+   "id": 138,
+   "comName": "Marsh Tit",
+   "locationDescription": "Wiener Prater",
+   "regionCode": "AT-9",
+   "dateFirstSeen": "10 Oct 2019"
+ },
+ {
+   "id": 139,
+   "comName": "Egyptian Goose",
+   "locationDescription": "Cismigiu Gardens",
+   "regionCode": "RO-B",
+   "dateFirstSeen": "08 Nov 2019"
+ },
+ {
+   "id": 140,
+   "comName": "Ruddy Shelduck",
+   "locationDescription": "Cismigiu Gardens",
+   "regionCode": "RO-B",
+   "dateFirstSeen": "08 Nov 2019"
+ },
+ {
+   "id": 141,
+   "comName": "Common Shelduck",
+   "locationDescription": "Cismigiu Gardens",
+   "regionCode": "RO-B",
+   "dateFirstSeen": "08 Nov 2019"
+ },
+ {
+   "id": 142,
+   "comName": "Caspian Gull",
+   "locationDescription": "Cismigiu Gardens",
+   "regionCode": "RO-B",
+   "dateFirstSeen": "08 Nov 2019"
+ },
+ {
+   "id": 143,
+   "comName": "Common Pochard",
+   "locationDescription": "Bernried am Starnberger See, Bayern, DE (47.877, 11.289)",
+   "regionCode": "DE-BY",
+   "dateFirstSeen": "01 Dec 2019"
+ },
+ {
+   "id": 144,
+   "comName": "Common Buzzard",
+   "locationDescription": "Hradec, Plzeňský kraj, CZ (49.619, 13.102) (on the train)",
+   "regionCode": "CZ-PL",
+   "dateFirstSeen": "02 Dec 2019"
+ },
+ {
+   "id": 145,
+   "comName": "Eurasian Jay",
+   "locationDescription": "Praha--PP Královská obora (Stromovka)",
+   "regionCode": "CZ-PR",
+   "dateFirstSeen": "04 Dec 2019"
+ },
+ {
+   "id": 146,
+   "comName": "Rose-ringed Parakeet",
+   "locationDescription": "Parc de Bruxelles--Warandepark",
+   "regionCode": "BE-BRU",
+   "dateFirstSeen": "09 Dec 2019"
+ },
+ {
+   "id": 147,
+   "comName": "Short-toed Treecreeper",
+   "locationDescription": "Parc de Bruxelles--Warandepark",
+   "regionCode": "BE-BRU",
+   "dateFirstSeen": "12 Dec 2019"
+ },
+ {
+   "id": 148,
+   "comName": "Tree Swallow",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "21 May 2020"
+ },
+ {
+   "id": 149,
+   "comName": "Peregrine Falcon",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "23 May 2020"
+ },
+ {
+   "id": 150,
+   "comName": "Tennessee Warbler",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "03 Oct 2020"
+ },
+ {
+   "id": 151,
+   "comName": "Pine Siskin",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "16 Oct 2020"
+ },
+ {
+   "id": 152,
+   "comName": "Bohemian Waxwing",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "11 Nov 2020"
+ },
+ {
+   "id": 153,
+   "comName": "Rusty Blackbird",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "11 Nov 2020"
+ },
+ {
+   "id": 154,
+   "comName": "Snow Bunting",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "27 Jan 2021"
+ },
+ {
+   "id": 155,
+   "comName": "Common Redpoll",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "06 Feb 2021"
+ },
+ {
+   "id": 156,
+   "comName": "Lapland Longspur",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "11 Mar 2021"
+ },
+ {
+   "id": 157,
+   "comName": "Glaucous Gull",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "09 Apr 2021"
+ },
+ {
+   "id": 158,
+   "comName": "Lesser Black-backed Gull",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "28 Apr 2021"
+ },
+ {
+   "id": 159,
+   "comName": "Glossy Ibis",
+   "locationDescription": "75 Mackenzie Drive, Summerside, Prince Edward Island, CA (46.396, -63.808)",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "08 May 2021"
+ },
+ {
+   "id": 160,
+   "comName": "Northern Harrier",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "10 May 2021"
+ },
+ {
+   "id": 161,
+   "comName": "Eastern Kingbird",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 May 2021"
+ },
+ {
+   "id": 162,
+   "comName": "Sora",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "13 Jun 2021"
+ },
+ {
+   "id": 163,
+   "comName": "Alder Flycatcher",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "13 Jun 2021"
+ },
+ {
+   "id": 164,
+   "comName": "Solitary Sandpiper",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "22 Aug 2021"
+ },
+ {
+   "id": 165,
+   "comName": "Northern Waterthrush",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "22 Aug 2021"
+ },
+ {
+   "id": 166,
+   "comName": "Northern Pintail",
+   "locationDescription": "Summerside Baywalk/Marsh",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "17 Sep 2021"
+ },
+ {
+   "id": 167,
+   "comName": "Ruby-crowned Kinglet",
+   "locationDescription": "20 Mackenzie Drive, Summerside, Prince Edward Island, CA (46.396, -63.806)",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "09 Oct 2021"
+ },
+ {
+   "id": 168,
+   "comName": "Northern Goshawk",
+   "locationDescription": "75 Mackenzie Drive, Summerside, Prince Edward Island, CA (46.396, -63.808)",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "30 Oct 2021"
+ },
+ {
+   "id": 169,
+   "comName": "Sanderling",
+   "locationDescription": "75 Mackenzie Drive, Summerside, Prince Edward Island, CA (46.396, -63.808)",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "05 Nov 2021"
+ },
+ {
+   "id": 170,
+   "comName": "White-winged Crossbill",
+   "locationDescription": "75 Mackenzie Drive, Summerside, Prince Edward Island, CA (46.396, -63.808)",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "07 Nov 2021"
+ },
+ {
+   "id": 171,
+   "comName": "Brown Creeper",
+   "locationDescription": "Water Street (west), Summerside",
+   "regionCode": "CA-PE",
+   "dateFirstSeen": "13 Dec 2021"
+ }
+]
