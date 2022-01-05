@@ -16,7 +16,7 @@ export async function getStaticPaths({ paginate, rss }) {
     items: allPosts.map((item) => {
       const content = `<content><![CDATA[ ${item.content.html} ]]></content>`
       const customData = [
-        `<id>${item.url}</id>`,
+        `<guid>${item.url}</guid>`,
         content,
       ]
         .join('') // combine into one string
