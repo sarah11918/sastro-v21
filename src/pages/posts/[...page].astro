@@ -17,7 +17,7 @@ export async function getStaticPaths({ paginate, rss }) {
       description: item.description,
       link: item.url,
       pubDate: item.date,
-      guid: item.url
+      guid: item.url,
     })),
     dest: "/rss.xml",
   })
