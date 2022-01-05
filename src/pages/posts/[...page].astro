@@ -14,7 +14,7 @@ export async function getStaticPaths({ paginate, rss }) {
     customData: `<language>en-us</language>`,
     
     items: sortedPosts.map((item) => {
-      const guid = `<guid>${item.url}</guid>`
+      const guid = `<guid isPermaLink="true">${item.url}</guid>`
     
       return {
         title: item.title,
@@ -23,7 +23,6 @@ export async function getStaticPaths({ paginate, rss }) {
         pubDate: item.date,
         guid,
       }
-    
     
     }),
     
