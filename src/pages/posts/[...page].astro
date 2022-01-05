@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/default.astro'
+
+let title = 'Blog'
+let description = 'All blog posts.'
+
+export async function getStaticPaths({ paginate, rss }) {
+  const allPosts = Astro.fetchContent('./*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  rss({
+    title: `${Sarah Rainsberger} | Blog`,
+    description: "Sarah Rainsberger Blog",
+    customData: `<language>en-us</language>`,
+    items: sortedPosts.map(item => ({
+      title: item.title,
+      description: item.description,
+      link: item.url,
+      pubDate: item.date,
+    })),
+    dest: "/rss.xml",
+  })
+
+    return paginate(sortedPosts, {
+      pageSize: 5,
+    })
+}
+
+const { page } = Astro.props
+
+---
+<BaseLayout content={{ title, description }}>
+   <p>Test page for RSS</p>
+</BaseLayout>
