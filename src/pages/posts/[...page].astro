@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 let title = 'Blog'
 let description = 'All blog posts.'
 
-export async function getStaticPaths({ paginate, rss }) {
+export async function getStaticPaths({ rss }) {
   const allPosts = Astro.fetchContent('./*.md');
   const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -21,12 +21,8 @@ export async function getStaticPaths({ paginate, rss }) {
     dest: "/rss.xml",
   })
 
-    return paginate(sortedPosts, {
-      pageSize: 5,
-    })
+    return [...]
 }
-
-const { page } = Astro.props
 
 let allPosts = Astro.fetchContent('./*.md');
 allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
