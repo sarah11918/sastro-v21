@@ -28,12 +28,15 @@ export async function getStaticPaths({ paginate, rss }) {
 
 const { page } = Astro.props
 
+let allPosts = Astro.fetchContent('./*.md');
+allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
 ---
 <BaseLayout title="All Posts">
   <main>
     <h2> Post Archive</h2>
     <div>
-      {sortedPosts.map((post) => (
+      {allPosts.map((post) => (
         <article>
           <a href={post.url}><h3>{post.title}</h3></a>
           <p>{post.description}</p>
