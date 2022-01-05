@@ -10,7 +10,7 @@ export async function getStaticPaths({ rss }) {
 
   rss({
     title: "Sarah Rainsberger | Blog",
-    description: "Sarah Rainsberger Blog",
+    description: "Posts from Sarah Rainsberger",
     customData: `<language>en-us</language>`,
     items: sortedPosts.map(item => ({
       title: item.title,
@@ -19,9 +19,9 @@ export async function getStaticPaths({ rss }) {
       pubDate: item.date,
     })),
     dest: "/rss.xml",
-  })
+  });
 
-    return sortedPosts
+    return [...];
 }
 
 let allPosts = Astro.fetchContent('./*.md');
