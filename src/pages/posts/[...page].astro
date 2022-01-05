@@ -13,18 +13,28 @@ export async function getStaticPaths({ paginate, rss }) {
     description: "Writing by Sarah Rainsberger",
     customData: `<language>en-us</language>`,
     items: sortedPosts.map(item => ({
+      const content = `<content><![CDATA[ ${item.content.html} ]]></content>`
+      const customData = [
+        `<id>${item.url}</id>`,
+        content,
+      ]
+
       title: item.title,
       description: item.description,
       link: item.url,
       pubDate: item.date,
-      guid: item.url,
+      customData
     })),
     dest: "/rss.xml",
   })
 
-    return paginate(sortedPosts, {
-      pageSize: 100,
-    })
+     return {
+        title: item.title,
+        description: item.description,
+        link: item.url,
+        pubDate: item.published_date,
+        customData,
+      }
 }
 
 let allPosts = Astro.fetchContent('./*.md');
