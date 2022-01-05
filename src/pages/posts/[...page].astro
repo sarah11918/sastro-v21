@@ -41,7 +41,7 @@ allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
           <a href={post.url}><h3>{post.title}</h3></a>
           <p>{post.description}</p>
           <p>{post.excerpt}</p>
-          <p>{new Date(post.date).toISOString().slice(0, 12)}</p>
+          <p>{new Date(post.date).toISOString().slice(0, 10)}</p>
           <a style="font-size: 0.8em;" href={post.url}>Read more</a>
           <hr>
         </article>
