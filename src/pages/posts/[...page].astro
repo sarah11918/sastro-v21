@@ -21,7 +21,7 @@ export async function getStaticPaths({ rss }) {
     dest: "/rss.xml",
   })
 
-    return [...]
+    return sortedPosts
 }
 
 let allPosts = Astro.fetchContent('./*.md');
