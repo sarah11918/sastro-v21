@@ -9,7 +9,7 @@ export async function getStaticPaths({ paginate, rss }) {
   const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   rss({
-    title: `${Sarah Rainsberger} | Blog`,
+    title: "Sarah Rainsberger | Blog",
     description: "Sarah Rainsberger Blog",
     customData: `<language>en-us</language>`,
     items: sortedPosts.map(item => ({
