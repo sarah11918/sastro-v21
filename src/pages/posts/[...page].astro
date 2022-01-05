@@ -13,17 +13,21 @@ export async function getStaticPaths({ paginate, rss }) {
     description: "Writing by Sarah Rainsberger",
     customData: `<language>en-us</language>`,
     
-    items: sortedPosts.map((item) => {
-      const guid = `<guid isPermaLink="true">${item.url}</guid>`
-    
+    items: allPosts.map((item) => {
+      const content = `<content><![CDATA[ ${item.content.html} ]]></content>`
+      const customData = [
+        `<id>${item.url}</id>`,
+        content,
+      ]
+        .join('') // combine into one string
+
       return {
         title: item.title,
         description: item.description,
         link: item.url,
         pubDate: item.date,
-        guid,
+        customData,
       }
-    
     }),
     
     dest: "/rss.xml",
