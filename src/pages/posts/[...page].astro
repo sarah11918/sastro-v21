@@ -4,13 +4,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 let title = 'Blog'
 let description = 'All blog posts.'
 
-export async function getStaticPaths({ rss }) {
+export async function getStaticPaths({ paginate, rss }) {
   const allPosts = Astro.fetchContent('./*.md');
   const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   rss({
     title: "Sarah Rainsberger | Blog",
-    description: "Posts from Sarah Rainsberger",
+    description: "Writing by Sarah Rainsberger",
     customData: `<language>en-us</language>`,
     items: sortedPosts.map(item => ({
       title: item.title,
@@ -19,9 +19,11 @@ export async function getStaticPaths({ rss }) {
       pubDate: item.date,
     })),
     dest: "/rss.xml",
-  });
+  })
 
-    return [...];
+    return paginate(sortedPosts, {
+      pageSize: 100,
+    })
 }
 
 let allPosts = Astro.fetchContent('./*.md');
