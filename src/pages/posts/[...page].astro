@@ -15,7 +15,7 @@ export async function getStaticPaths({ paginate, rss }) {
     
     items: allPosts.map((item) => {
       
-      const customData = `<guid isPermaLink="true">https://rainsberger.ca${item.url}</guid>`fix
+      const customData = `<guid isPermaLink="true">https://rainsberger.ca${item.url}</guid>`
 
       return {
         title: item.title,
