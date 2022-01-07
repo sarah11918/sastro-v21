@@ -37,7 +37,7 @@ And, since this page component would also end up creating a page itself, it made
 
 ## Exporting `getStaticPaths()`
 
-My .astro page component now needs to export `getStaticPaths()`, taking Astro's own `rss()` function as an argument and returning a paginated list of with information about all my posts.
+My .astro page component now needs to export `getStaticPaths()`, taking Astro's own `rss()` function as an argument and returning a paginated list with information about all my posts.
 
 The `rss()` function is, in turn, passed an `items` array with information for and about my feed as well as the name and route for the XML document `getStaticPaths()` will create.
 
@@ -96,7 +96,7 @@ So yes, now you can point your feed reader to https://rainsberger.ca/rss.xml and
 (Although, there may yet be more troubleshooting to do. I woke up this morning to all my blog posts unread again? I guess maybe the story is not over....)
 ## Additional Notes/Discoveries etc:
 
-### <guid>
-It is apparently good practice for each RSS item to have a <guid> tag for uniquely identifying each post, and common for that identifying to be the page's url. Using [Tony's Navillus example](https://github.com/Navillus-BV/navillus-dev/blob/c8a9851fd210d2388ea7dcff40e2befa20f39311/src/pages/blog/%5B...page%5D.astro#L51), I was able to add this tag via `customData` within my `items` mapping. (Thanks, Tony!)
+### `<guid>`
+It is apparently good practice for each RSS item to have a `<guid>` tag for uniquely identifying each post, and common for that identifying to be the page's url. Using [Tony's Navillus example](https://github.com/Navillus-BV/navillus-dev/blob/c8a9851fd210d2388ea7dcff40e2befa20f39311/src/pages/blog/%5B...page%5D.astro#L51), I was able to add this tag via `customData` within my `items` mapping. (Thanks, Tony!)
 
 However, using `item.url` outside of the `link:` property only returned the page slug, not the full url. So you can see that I had to hard-code my website domain in `customData`, although the `item.link: item.url` property does use the `site` I have set in `buildOptions` in config to create a full url.
