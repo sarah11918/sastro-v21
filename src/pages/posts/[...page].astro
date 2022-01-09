@@ -43,15 +43,15 @@ const sortedPosts = myPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
     <div>
       {sortedPosts.map((post) => {
       
-        const tagList = post.tags?.join(" ~ ") ?? []
-      
         return (
           <article>
           <a href={post.url}><h3>{post.title}</h3></a>
           <p>{post.description}</p>
           <p>{post.excerpt}</p>
+          <div style="display:flex;">
+            {post.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><a href={`/tags/${tag}`}>{tag}</a></div>)}
+          </div>
           <p>{new Date(post.date).toISOString().slice(0, 10)}</p>
-          <p><em>Tags: <span style="font-weight: bold; color:#3d5262;">{tagList}</span></em></p>
           <a style="font-size: 0.8em;" href={post.url}>Read more</a>
           <hr>
         </article>
