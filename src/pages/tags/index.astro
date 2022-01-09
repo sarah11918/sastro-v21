@@ -5,13 +5,13 @@ let title = 'Tags'
 const allPosts = await Astro.fetchContent('../posts/*.md');
 const tags = [...new Set([].concat.apply([], allPosts.map(post => post.tags)))]
 ---
-    <BaseLayout title={title}>
-        <main>
-            {tags.sort().map((tag) => (
-                <p>
-                <a href={`/tags/${tag}`}>{tag}</a>
-                </p>
-            ))}
-        </main>
-    </BaseLayout>
+<BaseLayout title={title}>
+    <main>
+        {tags.sort().map((tag) => (
+            <p>
+            <a href={`/tags/${tag}`}>{tag}</a>
+            </p>
+        ))}
+    </main>
+</BaseLayout>
   
