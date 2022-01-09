@@ -9,6 +9,7 @@ thumb_img_path: images/chromebookleaf.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["blogging"]
 ---
 The Samsung Chromebook Pro is here!
 

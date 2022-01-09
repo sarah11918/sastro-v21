@@ -9,6 +9,7 @@ thumb_img_path: images/gphotoalbumsPW.png
 content_img_path: images/chromebookleaf.jpg
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["Google Photos"]
 ---
 Google Photos is great for *storing* your photos. It's even becoming pretty good at *sharing* select photos with select people. But still, the problem for many of us from the Picasa Web Album days is *displaying* our albums publicly.
 

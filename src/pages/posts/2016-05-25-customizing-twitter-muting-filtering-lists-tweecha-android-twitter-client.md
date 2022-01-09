@@ -14,6 +14,7 @@ excerpt: >-
 hide_header: false
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["Twitter"]
 ---
 There are two major criteria I have for a Twitter client, given the way that I use Twitter.
 1. Keep track (and hold on to a lengthy backlog) of unread tweets.

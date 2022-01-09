@@ -13,6 +13,7 @@ hide_header: false
 template: post
 content_img_path: images/chromebookleaf.jpg
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["Google Photos"]
 ---
 One issue (among many!) that people are having with the transition from Picasa Web Albums to Google Photos is how to directly link to a photo from Google Photos.
 

@@ -11,6 +11,7 @@ template: post
 thumb_img_path: images/gatsbysandboxerror1.png
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: 2021-04-08-updating-codesandbox-config-gatsby-node-version-12
+tags: ["blogging", "solutions"]
 ---
 ## The Problem:
 

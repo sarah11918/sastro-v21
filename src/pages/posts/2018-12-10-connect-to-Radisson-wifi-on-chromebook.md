@@ -13,6 +13,7 @@ thumb_img_path: /images/ScreenshotRadissonAutoRefreshPlusSettingsBecauseRedirect
 content_img_path: images/chromebookleaf.jpg
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["solutions"]
 ---
 
 Can't connect to wifi on your Chromebook when you stay at Radisson hotel because of their captive portal? No, it's *not* just a matter of finding a non-SSL page to start your connection like with many other captive portals. 

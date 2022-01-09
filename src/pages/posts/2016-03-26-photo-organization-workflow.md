@@ -11,6 +11,7 @@ thumb_img_path: images/photoorganizationdiagram.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["Google Photos"]
 ---
 
 I'm perhaps less of a "photographer" and more of a "photo management addict." I may not have great photos, but the ones I have are immaculately organized! Many have asked me about my process, so here's a description of what I do to keep on top of the many photos, from many sources, I accumulate.

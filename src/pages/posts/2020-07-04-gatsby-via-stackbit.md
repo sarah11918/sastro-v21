@@ -15,6 +15,7 @@ thumb_img_path: images/stackbiteditor00.png
 content_img_path: images/chromebookleaf.jpg
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: 2020-07-04-gatsby-via-stackbit
+tags: ["blogging"]
 ---
 I held on with all eight tentacles to [Octopress](http://www.octopress.org) as long as I could! But now that I'm learning JavaScript more seriously, I thought a good project would be a modern blog with some modern technologies. Let's head into the Roaring Twenties with Gatsby(.js) and an interesting JAMstack site builder/maintainer called [Stackbit](https://www.stackbit.com).
 

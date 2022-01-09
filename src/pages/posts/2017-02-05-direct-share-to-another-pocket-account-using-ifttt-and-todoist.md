@@ -18,6 +18,7 @@ thumb_img_path: images/pocket1.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["solutions"]
 ---
 [Pocket](https://getpocket.com/) is our "read it later" service of choice. Unfortunately, its current sharing options leave a little something to be desired. 
 

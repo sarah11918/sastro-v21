@@ -21,6 +21,7 @@ hide_header: false
 template: post
 thumb_img_path: images/tweechacrop.png
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["Twitter"]
 ---
 [YoruFukurou (Night Owl)](https://sites.google.com/site/yorufukurou/home-en) is my indispensable Mac OS X twitter client. It's the only client I've found that supports tweet filtering, not just simply muting of tweets so that tweets I might not to see *now* can still be read at a convenient time *later*.
 

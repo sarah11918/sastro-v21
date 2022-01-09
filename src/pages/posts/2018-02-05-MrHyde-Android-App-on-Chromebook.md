@@ -11,6 +11,7 @@ thumb_img_path: images/mrhydecomposecrop.png
 content_img_path: images/chromebookleaf.jpg
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["blogging"]
 ---
 Unexpectedly, I've been doing most of my blog post editing directly via a browser while logged into Gitlab.com instead of using an Android markdown editor. I wanted to revisit my options, however, so here goes a post composed via MrHyde.
 

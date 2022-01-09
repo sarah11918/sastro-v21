@@ -10,6 +10,7 @@ hide_header: false
 template: post
 thumb_img_path: images/gcollections.jpg
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["Google Photos"]
 ---
 Can I start yet another post with *"One issue (among many!) that people are having with the transition from Picasa Web Albums to Google Photos is ..."*? Well, here goes nothin'!
 

@@ -9,6 +9,7 @@ hide_header: false
 template: post
 content_img_path: images/chromebookleaf.jpg
 layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: [""]
 ---
 A quick post to announce a very exciting thing:
 
