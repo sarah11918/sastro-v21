@@ -5,6 +5,7 @@ date: 2021-08-12
 author: Sarah Rainsberger
 description: Exploring the ins and outs of special Markdown characters in Astro
 slug: escaping-markdown
+tags: ["astro", "markdown"]
 ---
 
 Here is a list of the characters that may need to be escaped with the \ character according to [MarkdownGuide.org](https://www.markdownguide.org/):

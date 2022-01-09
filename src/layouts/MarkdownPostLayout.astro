@@ -2,11 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 const {content} = Astro.props;
 const postDate = content.date.slice(0,10);
+const tagList = content.tags.join(" ~ ")
 ---
 <BaseLayout title = {content.title}>
   <main>
     <p><em>{content.description}</em></p>
     <h1>{content.title}</h1>
+    <p>Tags: <span style="font-weight: bold; color:#3d5262;">{tagList}</span></p>
     <p>Written by: {content.author} on {postDate}</p>
     <img src={content.hero}>
     <article>

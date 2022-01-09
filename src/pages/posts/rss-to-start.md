@@ -6,6 +6,7 @@ description: I finally did the work to create an RSS feed for this blog. I'll be
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: rss-to-start
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLUDPhhaB6hat3-VsNbicjTZ40xOqiiC-Pe9kkp_mehr5ov8itSBxMqQteJICrTr2_CExAlF_9AEZJsHt5g8n425gq8qKrSFYMwMA4-v_1zNmp0LcivQ5IKoguPyWZOJZHxwE-zbTwgUVT5EMVu5oRmdOA=w250-no?"
+tags: ["rss", "astro", "blogging"]
 ---
 I'm a huge fan of RSS, and it's always bothered me that this blog, in its Astro incarnation, didn't have a feed. So, I finally sat down and made it happen today!
 

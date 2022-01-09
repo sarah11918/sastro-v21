@@ -5,6 +5,7 @@ date: 2021-11-12
 description: Astro sites allow you to *use* React, but they *aren't* React, themselves. Understanding the differences between React and Astro can help you get started more quickly, so here are some thoughts on how to think like an Astro-naut!
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: thinking-in-astro-from-react
+tags: ["react", "astro"]
 ---
 When I first built basic websites, back in nineteen-ninety... *mumble mumble*, I figured out enough HTML to make a static page, then link to another page. My first site for the small tutoring company I worked for didn't even contain css, let alone JavaScript. Just html elements. (But, it did have a table!)
 

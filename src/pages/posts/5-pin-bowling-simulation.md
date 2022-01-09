@@ -5,6 +5,7 @@ date: 2021-08-25
 description: When you code for @jbrains, you get 5-pin bowling coding assignments!
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: 5-pin-bowling-simulation
+tags: ["javascript", "no local dev environment"]
 ---
 ## Look at me, I'm a pin setter!
 
