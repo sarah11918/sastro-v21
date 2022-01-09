@@ -9,7 +9,6 @@ export async function getStaticPaths({ }) {
       post.tags && post.tags.map(tag => allTags.add(tag))
   })
   
-
   return Array.from(allTags).map((tag) => {
     const filteredPosts = allPosts.filter((post) => post.tags.includes(tag))
     return {
@@ -24,8 +23,7 @@ export async function getStaticPaths({ }) {
 const { pages } = Astro.props
 const { params } = Astro.request
 
-let title = params.tag;
-let description = ''; 
+let title = params.tag; 
 ---
 
     <BaseLayout title={title}>
