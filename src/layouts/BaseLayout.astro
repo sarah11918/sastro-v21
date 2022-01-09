@@ -1,6 +1,6 @@
 ---
 import * as Icon from '@astropub/icons';
-const { content = {}, title, description, canonicalURL } = Astro.props;
+const { content = {}, title, description, canonicalURL, hero } = Astro.props;
 const formattedTitle = `${title} 👩‍💻 Sarah Rainsberger`
 const site={
     title: "Sarah Rainsberger",
@@ -13,7 +13,7 @@ const site={
 
 
 const formattedContentTitle = content.title ?? site.title
-const imgSrc = content?.image?.src ?? site.image.src;
+const imgSrc = content?.hero ?? site.image.src;
 const imageAlt = content?.image?.alt ?? site.image.alt;
 ---
 <!DOCTYPE html>

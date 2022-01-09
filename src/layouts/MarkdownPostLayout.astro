@@ -8,6 +8,7 @@ const postDate = content.date.slice(0,10);
     <p><em>{content.description}</em></p>
     <h1>{content.title}</h1>
     <p>Written by: {content.author} on {postDate}</p>
+    <img src={content.hero}>
     <article>
       <slot />
     </article>
