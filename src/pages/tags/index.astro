@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 let title = 'Tags'
 
 const allPosts = await Astro.fetchContent('../posts/*.md');
-const tags = [...new Set([].concat.apply([], allPosts.map(post => post.tags)))]
+const tags = [...new Set([].concat.apply([],allPosts.map(post => post.tags)))]
 ---
 <BaseLayout title={title}>
     <main>

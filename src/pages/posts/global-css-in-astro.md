@@ -1,7 +1,7 @@
 ---
 title: Adventures with Global CSS in Astro
 author: Sarah
-date: 2021-07-30
+date: '2021-07-30'
 description: A comparison of what happened (spoiler alert -- it got weird!) when I tried to import styles/global.css into my layout.astro file.
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: global-css-in-astro

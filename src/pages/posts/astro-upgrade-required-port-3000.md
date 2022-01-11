@@ -1,7 +1,7 @@
 ---
 title: Interpreting the "Upgrade Required" message in live web preview of Astro
 author: Sarah
-date: 2021-09-04
+date: '2021-09-04'
 description: A misleading error message that might steer you down the wrong path...
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: astro-upgrade-required-port-3000

@@ -1,8 +1,5 @@
 ---
-title: >-
-  Following new Blue Jays twitter accounts - adding to the
-  muting/filtering/spoiler-proof   systems on Tweecha (Android) and Yoru Fukurou
-  (Mac OS)
+title: My spoiler-proof systems for Blue Jays Twitter
 subtitle: ''
 date: '2016-06-09'
 excerpt: >-

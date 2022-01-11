@@ -1,7 +1,7 @@
 ---
 title: Setting up React Testing Library in an Astro project
 author: Sarah
-date: 2021-09-28
+date: '2021-09-28'
 description: I am starting to experiment with React unit testing, and since my Astro blog contains React components, I wanted to see what happens when I tried adding React Testing Library to Astro!
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: react-testing-library-astro

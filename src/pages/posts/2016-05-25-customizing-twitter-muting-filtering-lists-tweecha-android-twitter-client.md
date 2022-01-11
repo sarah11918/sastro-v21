@@ -1,7 +1,6 @@
 ---
 title: >-
-  Customizing My Twitter Experience Through Muting, Filtering And Lists with
-  Tweecha on Android
+  Twitter Muting, Filtering And Lists with Tweecha on Android
 subtitle: ''
 date: '2016-05-25'
 excerpt: >-

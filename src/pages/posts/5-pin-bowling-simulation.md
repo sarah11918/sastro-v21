@@ -1,7 +1,7 @@
 ---
 title: Javascript 5-pin bowling simulation in CodePen
 author: Sarah
-date: 2021-08-25
+date: '2021-08-25'
 description: When you code for @jbrains, you get 5-pin bowling coding assignments!
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: 5-pin-bowling-simulation

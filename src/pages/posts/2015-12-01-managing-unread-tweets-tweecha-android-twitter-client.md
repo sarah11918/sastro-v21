@@ -1,7 +1,6 @@
 ---
 title: >-
-  Managing unread tweets - Is Tweecha Android Twitter Client a match for Yoru  
-  Fukurou (Night Owl)?
+  Managing unread tweets via Tweecha Android Twitter Client
 subtitle: ''
 date: '2015-12-01'
 excerpt: >-

@@ -1,7 +1,7 @@
 ---
 title: "RSS - getting started"
 author: Sarah
-date: 2022-01-05
+date: '2022-01-05'
 description: I finally did the work to create an RSS feed for this blog. I'll be getting in to how I (eventually!) set this up in Astro, but first, here's a quick description of how I *consume* RSS. (And, convienently, how I'm gonna test that I can successfully see a new post!)
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: rss-to-start

@@ -5,7 +5,7 @@ setup: |
 
 title: Hello Astro v0.21.0 - Components in Markdown!
 author: Sarah
-date: 2021-11-22
+date: '2021-11-22'
 description: This is my first Markdown file written in "new" Astro... so let's see some of those components in markdown we've all been waiting for!
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: components-in-markdown

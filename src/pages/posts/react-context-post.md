@@ -1,7 +1,7 @@
 ---
 title: React Context Post
 author: Sarah
-date: 2021-07-18
+date: '2021-07-18'
 description: An example of React context in Astro, using a currency example
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: react-context-post

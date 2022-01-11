@@ -1,7 +1,7 @@
 ---
 title: Local environment variables -- without the local environment Part 2
 author: Sarah
-date: 2021-10-31
+date: '2021-10-31'
 description: One of my APIs requires that I make an authenticated call using Headers in a React component, rendered on an Astro page. This was causing me some grief in Gitpod with my not-so-local environment variables. Here's how the Gitpod community solved it for me!
 layout: ../../layouts/MarkdownPostLayout.astro
 slug: no-local-environment-variables-part-2
