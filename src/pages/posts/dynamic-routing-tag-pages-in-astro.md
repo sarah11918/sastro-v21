@@ -74,12 +74,14 @@ The content I want to render is some information about each of my *blog posts* t
 ### Page Logic
 
 This page needs to:
-    - fetch info about all my posts
-    - sort my posts in date order
-    - create a set of tags used from all the posts
+
+- fetch info about all my posts
+- sort my posts in date order
+- create a set of tags used from all the posts
 
 And then this page needs to return (for rendering as HTML):
-    - an array of *tag name (`params`)/posts with that tag name* (`props`) objects
+
+- an array of *tag name (`params`)/posts with that tag name* (`props`) objects
     
 ## Astro Page Component
 
