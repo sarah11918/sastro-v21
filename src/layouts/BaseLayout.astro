@@ -12,7 +12,7 @@ const site={
 }
 
 
-const formattedContentTitle = content.title ?? site.title
+const formattedContentTitle = content?.title ?? site.title
 const imgSrc = content?.hero ?? site.image.src;
 const imageAlt = content?.hero?.alt ?? site.image.alt;
 ---
@@ -44,6 +44,13 @@ const imageAlt = content?.hero?.alt ?? site.image.alt;
     <meta property="og:locale" content="en_CA">
     <meta property="article:author" content="Sarah Rainsberger">
     <link rel="canonical" href={canonicalURL} />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@sarah11918">
+    <meta name="twitter:url" content={content.description ?? site.description}>
+    <meta name="twitter:title" content={formattedTitle}>
+    <meta name="twitter:description" content={content?.description ?? site.description}>
+    <meta name="twitter:image" content={content.hero}>
 
   </head>
   <body style="min-height: 100vh; display: flex; flex-direction: column;">

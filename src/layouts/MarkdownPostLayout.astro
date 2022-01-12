@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 const {content} = Astro.props;
 const postDate = content.date.slice(0,10); 
 ---
-<BaseLayout title = {content.title}>
+<BaseLayout title = {content.title} hero = {content.hero} description = {content.description}>
   <main>
     <p><em>{content.description}</em></p>
     <h1>{content.title}</h1>
