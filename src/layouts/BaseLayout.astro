@@ -7,14 +7,14 @@ const site={
     description: "Creates and solves problems. Sometimes in that order.",
     image: {
         src: "https://lh3.googleusercontent.com/pw/AM-JKLUwoJunFVUl0-53MQ2wr8-kKjtUCgbZ2AS5hJg7pLtMM-vz8bL9jrDEKxx68OKZT8Rndip28WehHVZwX63UrsE13B5O7o2wys7TswfzAXp2YZAkBJVu1hyk2thtIDPg1YW0-FEZi8h5vzV5uLY1WNunhw=w896-h672-no?.jpg",
-        alt: "A chickadee on a branch",
+        alt: "",
     }
 }
 
 
 const formattedContentTitle = content.title ?? site.title
-const imgSrc = content?.image?.src ?? site.image.src;
-const imageAlt = content?.image?.alt ?? site.image.alt;
+const imgSrc = content?.hero ?? site.image.src;
+const imageAlt = content?.hero?.alt ?? site.image.alt;
 ---
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US" language="English" prefix="og: http://ogp.me/ns#">
