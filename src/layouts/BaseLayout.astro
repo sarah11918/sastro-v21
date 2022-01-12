@@ -13,7 +13,7 @@ const site={
 
 
 const formattedContentTitle = content.title ?? site.title
-const imgSrc = content?.hero ?? site.image.src;
+const imgSrc = content?.image?.src ?? site.image.src;
 const imageAlt = content?.image?.alt ?? site.image.alt;
 ---
 <!DOCTYPE html>
@@ -24,8 +24,7 @@ const imageAlt = content?.image?.alt ?? site.image.alt;
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
     <link rel="stylesheet" href="/styles/bird.css" />
-<link rel="stylesheet" href="https://unpkg.com/react-day-picker/lib/style.css">
-  
+    <link rel="stylesheet" href="https://unpkg.com/react-day-picker/lib/style.css">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
