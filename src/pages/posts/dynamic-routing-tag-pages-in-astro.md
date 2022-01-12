@@ -29,7 +29,7 @@ I *did* know how to make `src/pages/tags/index.astro`, and I didn't even need `g
 
 This page is **statically** generated, since it's an Astro page component file somewhere under `/src/pages`. Its content uses `Astro.fetchContent()`, just like my Blog Page or my Full Post Archive page that fetch information about all my Markdown blog post files (ie: content from the Markdown front matter, including its array of tags).
 
-The difference is that I just need to create a `Set` of my tags, each tag is only listed once. Then I can display each element of the set.
+The difference is that this time I need to create a `Set` of my tags, so that each tag is only listed once. Then I can display each element of the set.
 
 So with a bit of JavaScript in my Astro front matter, this page doesn't require a ton of heavy lifting:
 
