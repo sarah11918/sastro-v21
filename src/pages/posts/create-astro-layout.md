@@ -8,9 +8,9 @@ tags: ["videos", "astro"]
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLX90l9OOIH0Tarqdl3BJoMbMedPlnVToVh4N930PvJqT10e2udS-pM0druuYfwTapGcS_YFWAZ0J2CtewEA0OkQUkyRp4qOlePDM1MfJl6VyBHnnhN-fIpWKWvoN2JM84A-3kYcaF9ecmEjOsqEqi99Pw=w250-no?"
 ---
 Trying out some new technology, and since I can't fit the entire transcript in the YouTube video description, here it is all on this page.
-
+<div class="video-container">
 <iframe src="https://www.youtube.com/embed/9bVuIBD70wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
 Transcript:
 
 0:01  
