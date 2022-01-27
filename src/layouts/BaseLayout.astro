@@ -1,23 +1,21 @@
 ---
 import * as Icon from '@astropub/icons';
-const { content = {}, title, description, canonicalURL, hero } = Astro.props;
+const {title, description, canonicalURL, hero, alt } = Astro.props;
 const formattedTitle = `${title} 👩‍💻 Sarah Rainsberger`
 const site={
     title: "Sarah Rainsberger",
     description: "Creates and solves problems. Sometimes in that order.",
     image: {
         src: "https://lh3.googleusercontent.com/pw/AM-JKLUwoJunFVUl0-53MQ2wr8-kKjtUCgbZ2AS5hJg7pLtMM-vz8bL9jrDEKxx68OKZT8Rndip28WehHVZwX63UrsE13B5O7o2wys7TswfzAXp2YZAkBJVu1hyk2thtIDPg1YW0-FEZi8h5vzV5uLY1WNunhw=w896-h672-no?.jpg",
-        alt: "",
+        alt: "Probably a bird or a pile of notebooks!",
     }
 }
 
-
-const formattedContentTitle = content?.title ?? site.title
-const imgSrc = content?.hero ?? site.image.src;
-const imageAlt = content?.hero?.alt ?? site.image.alt;
+const imgSrc = hero ?? site.image.src;
+const imageAlt = alt ?? site.image.alt;
 ---
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US" language="English" prefix="og: http://ogp.me/ns#">
+<html dir="ltr" lang="en-US" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +37,7 @@ const imageAlt = content?.hero?.alt ?? site.image.alt;
     <meta property="og:title" content = {formattedTitle}/>
     <meta property="og:image" content = {imgSrc} />
     <meta property="og:image:alt" content = {imageAlt} />
-    <meta property="og:description" content = {content.description ?? site.description}>
+    <meta property="og:description" content = {description ?? site.description}>
     <meta property="og:site_name" content={site.title}>
     <meta property="og:locale" content="en_CA">
     <meta property="article:author" content="Sarah Rainsberger">
@@ -47,10 +45,10 @@ const imageAlt = content?.hero?.alt ?? site.image.alt;
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@sarah11918">
-    <meta name="twitter:url" content={content.description ?? site.description}>
+    <meta name="twitter:url" content={description ?? site.description}>
     <meta name="twitter:title" content={formattedTitle}>
-    <meta name="twitter:description" content={content?.description ?? site.description}>
-    <meta name="twitter:image" content={content.hero}>
+    <meta name="twitter:description" content={description ?? site.description}>
+    <meta name="twitter:image" content={hero}>
 
   </head>
   <body style="min-height: 100vh; display: flex; flex-direction: column;">
@@ -116,7 +114,11 @@ const imageAlt = content?.hero?.alt ?? site.image.alt;
     </div>
 </header>
                 
-   
+    <p><span style="font-weight:bold;">Formatted Page Title:</span>{formattedTitle}</p>
+    <p><span style="font-weight:bold;">Post/Page Description:</span>{description ?? site.description}</p>
+    <p><span style="font-weight:bold;">Hero Image src:</span>{imgSrc}</p>
+    <p><span style="font-weight:bold;">Hero Image Alt:</span> {imageAlt}</p>
+  
     <slot />
 
     <div style="flex-grow:1"></div>
