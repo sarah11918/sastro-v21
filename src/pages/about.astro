@@ -2,7 +2,7 @@
 import { Markdown } from 'astro/components'
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
-<BaseLayout title = "About" >
+<BaseLayout title = "About" canonicalURL={Astro.request.canonicalURL}>
   <main>
     <Markdown>
 

@@ -1,16 +1,17 @@
 ---
 import * as Icon from '@astropub/icons';
-const {title, description, canonicalURL, hero, alt } = Astro.props;
+const {title, description, postURL, hero, canonicalURL, alt} = Astro.props;
 const formattedTitle = `${title} 👩‍💻 Sarah Rainsberger`
 const site={
     title: "Sarah Rainsberger",
     description: "Creates and solves problems. Sometimes in that order.",
     image: {
         src: "https://lh3.googleusercontent.com/pw/AM-JKLUwoJunFVUl0-53MQ2wr8-kKjtUCgbZ2AS5hJg7pLtMM-vz8bL9jrDEKxx68OKZT8Rndip28WehHVZwX63UrsE13B5O7o2wys7TswfzAXp2YZAkBJVu1hyk2thtIDPg1YW0-FEZi8h5vzV5uLY1WNunhw=w896-h672-no?.jpg",
-        alt: "Probably a bird or a pile of notebooks!",
+        alt: "",
     }
 }
 
+const url = Astro.request.canonicalURL.href
 const imgSrc = hero ?? site.image.src;
 const imageAlt = alt ?? site.image.alt;
 ---
@@ -41,14 +42,14 @@ const imageAlt = alt ?? site.image.alt;
         <meta property="og:site_name" content={site.title}>
         <meta property="og:locale" content="en_CA">
         <meta property="article:author" content="Sarah Rainsberger">
-        <link rel="canonical" href={canonicalURL} />
+        <link rel="canonical" href={url} />
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@sarah11918">
         <meta name="twitter:url" content={description ?? site.description}>
         <meta name="twitter:title" content={formattedTitle}>
         <meta name="twitter:description" content={description ?? site.description}>
-        <meta name="twitter:image" content={hero}>
+        <meta name="twitter:image" content={imgSrc}>
     </head>
     <body style="min-height: 100vh; display: flex; flex-direction: column;">
     
