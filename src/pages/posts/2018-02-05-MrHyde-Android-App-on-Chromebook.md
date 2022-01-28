@@ -1,11 +1,7 @@
 ---
 title: MrHyde Android App on Chromebook
 subtitle: ''
-excerpt: >-
-  Unexpectedly, I've been doing most of my blog post editing directly via a
-  browser while logged into GitLab.com instead of using an Android markdown
-  editor. I wanted to revisit my options, however, so here goes a post composed
-  via MrHyde.
+description: "Unexpectedly, I've been doing most of my blog post editing directly via a browser while logged into GitLab.com instead of using an Android markdown editor. I wanted to revisit my options, however, so here goes a post composed via MrHyde."
 date: '2018-02-05'
 thumb_img_path: images/mrhydecomposecrop.png
 content_img_path: images/chromebookleaf.jpg

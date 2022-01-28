@@ -3,9 +3,7 @@ title: Updating Node version to fix Gatsby issues in CodeSandbox
 author: Sarah Rainsberger
 subtitle: 'Just another adventure in #CodingOnAChromebook!'
 date: '2021-04-08'
-excerpt: >-
-  It just didn't make sense that no online editors were building Gatsby
-  projects, so I decided to dive in...
+description: "It just didn't make sense that no online editors were building Gatsby projects, so I decided to dive in..."
 hide_header: false
 template: post
 thumb_img_path: images/gatsbysandboxerror1.png

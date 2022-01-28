@@ -3,12 +3,7 @@ title: New Gatsby.js site via Stackbit
 author: Sarah Rainsberger
 subtitle: ''
 date: '2020-07-04'
-excerpt: >-
-  I held on with all eight tentacles to Octopress as long as I could! But now
-  that I'm learning JavaScript more seriously, I thought a good project would be
-  a modern blog with some modern technologies. Let's head into the Roaring
-  Twenties with Gatsby(.js) and an interesting JAMstack site builder/maintainer
-  called Stackbit.
+description: "I held on with all eight tentacles to Octopress as long as I could! But now that I'm learning JavaScript more seriously, I thought a good project would be a modern blog with some modern technologies. Let's head into the Roaring Twenties with Gatsby(.js) and an interesting JAMstack site builder/maintainer called Stackbit."
 hide_header: false
 template: post
 thumb_img_path: images/stackbiteditor00.png
