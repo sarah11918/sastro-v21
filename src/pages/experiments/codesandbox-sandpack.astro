@@ -15,7 +15,8 @@ const codez = `export default function App() {
   <BaseLayout title="Sandpack code playground">
     <main>
       <h1>Sandpack embedded code playground</h1>
-      <MySandpack client:only="react" codez={codez} />
-        
+      <MySandpack 
+      client:only="react"
+      codez={codez} />
   </main>
 </BaseLayout>
