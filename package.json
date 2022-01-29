@@ -17,6 +17,7 @@
   "dependencies": {
     "@apollo/client": "^3.5.6",
     "@astropub/icons": "^0.1.1",
+    "@codesandbox/sandpack-react": "^0.13.8",
     "graphql": "^16.2.0",
     "react-day-picker": "^7.4.10"
   }

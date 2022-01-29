@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import MySandpack from '../../components/experiments/MySandpack.jsx';
+---
+  <BaseLayout title="Sandpack code playground">
+    <main>
+      <h1>Sandpack embedded code playground</h1>
+      <MySandpack client:only="react" />
+        
+  </main>
+</BaseLayout>
