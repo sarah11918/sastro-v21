@@ -7,3 +7,9 @@
  [[redirects]]
   from = "/2016/10/04/google-photos-shared-albums"
   to = "/posts/2016/10/04/google-photos-shared-albums"
+  
+  [[redirects]]
+  from = "/:year/:month/:day/:slug"
+  to = "/posts/:year-:month-:day-:slug"
+  status = 301
+  force = false
