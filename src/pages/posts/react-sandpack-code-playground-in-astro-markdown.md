@@ -53,7 +53,7 @@ combined: |
 
 Since [Astro .md Markdown files can render React components](/posts/components-in-markdown), I knew I should be able to get this Sandpack code playground to render on this page.
 
-But,I want to be able to pass this component custom code for the **`App.js`** file as props, so that my playground doesn't just start by displaying basic React app template every time. This way, I can have a custom component coded and displayed right on page load.
+But, I want to be able to pass this component custom code for the **`App.js`** file as props, so that my playground doesn't just start by displaying basic React app template every time. This way, I can have a custom component coded and displayed right on page load.
 
 In an .astro Astro page, [this works just fine](/experiments/codesandbox-sandpack) because I can define a variable as a string of code in my Astro frontmatter. What I wasn't sure about was trying to pass a multi-line **`App()`** function (that maybe had characters that needed escaping??) to my React component via Markdown.
 
@@ -97,7 +97,7 @@ Surely that's a solution normal people would find reasonable!
 What about: 
 
 ```jsx
-combined: |
+code: |
     import { useState } from 'react';
 
     export default function App() {
