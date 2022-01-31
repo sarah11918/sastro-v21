@@ -1,6 +1,6 @@
 ---
 import { Markdown } from 'astro/components';
-import { Prism } from 'astro/components';
+import { Prism, Code } from 'astro/components';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 let codesnippet = `
@@ -16,6 +16,17 @@ let codesnippet = `
       },
     ],
   `
+
+let layoutcode = `
+  ---
+  import BaseLayout from '../layouts/BaseLayout.astro';
+  ---
+  <BaseLayout title="New Page Template!">
+    <main>
+      <p>New page template!</p>
+    </main>
+  </BaseLayout>
+`
 ---
 <BaseLayout title = "Code Snippet Samples" >
 <main>
@@ -44,7 +55,7 @@ Astro's default starters do not include *any* styles for `<code>`, but you can a
 
 <Prism lang="css" code={`
 code {
-  background-color: grey;
+  background-color: #212121; // Chosen specifically to match my prefered Shiki theme to avoid conflicts
   color: white;
   border-radius: 5px;
   padding: 0.18em 0.5em;
@@ -102,9 +113,7 @@ Once you have a Prism theme downloaded or linked, you can either ...
 </Markdown>
 <Prism lang="astro" code={`
 ---
-import { Markdown } from 'astro/components';
 import { Prism } from 'astro/components';
-import BaseLayout from '../layouts/BaseLayout.astro';
 
 let codesnippet = \`
   // In your gatsby-config.js
@@ -223,12 +232,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <Markdown>
 ## Astro's `<Code />` component (Shiki)
 
-Astro now also supports a newer `<Code/>` component for rendering code.
+Astro now also supports a newer `<Code/>` component for rendering code with Shiki.
 
-I'll be back soon to add the details here!
-
+This component should be passed some `code` inline or via a variable defined in front matter, a `lang` and optionally, a `theme`.
 </Markdown>
 
+<Prism lang="astro" code={`
+---
+import { Code } from 'astro/components';
+let layoutcode = \`
+  ---
+  import BaseLayout from '../layouts/BaseLayout.astro';
+  ---
+  <BaseLayout title="New Page Template!">
+    <main>
+      <p>New page template!</p>
+    </main>
+  </BaseLayout>
+\`
+---
+<Code lang="astro" theme="material-darker" code={layoutcode} />
+`} />
+<h3>... renders as ...</h3>
+<Code code={layoutcode} lang="js" theme="material-darker" />
 
 </main>
 </BaseLayout>

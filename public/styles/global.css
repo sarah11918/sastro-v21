@@ -339,9 +339,15 @@ background-color: #FF6600
 }
 
 code {
-  background-color: grey;
+  background-color: #212121;
   color: white;
   border-radius: 5px;
   padding: 0.20em 0.5em;
-  font-weight: bold;
+  
+}
+
+.astro-code {
+  padding-left: 1em;
+  font-size: 1.25em;
+  font-weight: normal;
 }
