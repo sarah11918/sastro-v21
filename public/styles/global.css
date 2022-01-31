@@ -337,3 +337,11 @@ background-color: #FF6600
    height: 100%; 
   padding-bottom: 2em;
 }
+
+code {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  padding: 0.20em 0.5em;
+  font-weight: bold;
+}

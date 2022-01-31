@@ -19,15 +19,60 @@ let codesnippet = `
 ---
 <BaseLayout title = "Code Snippet Samples" >
 <main>
-<h1>Using Astro's Prism component to render Code snippets:</h1>
-<p>Note! "astro" is a language recognized by both Markdown and Prism. Since the code the example is trying to render below is JS, all the code examples you see use "js" as the code language. But, on this page, in order for *me* to render an example of Astro code that is rendering JavaScript, I'm actually using "astro" as the code language! 🤣</p>
+<Markdown>
+# Render Code snippets with syntax highlighting in Astro 💅
 
-<p>See the bottom of the page for an example of an Astro render.</p>
+Astro supports styling your code via [Prism](https://prismjs.com/) by default in Markdown and by using a `<Prism />` component and via [Shiki](https://shiki.matsu.io/) using a `<Code />` component. Be sure to import any Astro components you want to use: 
+</Markdown>
+<Prism lang="astro" code={`
+---
+import { Markdown, Prism, Code } from 'astro/components';
+---
+`} />
 
-  <Prism lang="astro" code={`
-    //Be sure to choose a prismjs theme and include the stylesheet link in <head>!
-    //e.g. <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css">
-    //NB: The \` character needs to be escaped!
+
+<Markdown>
+*(Note: The use of Prism may be deprecated in the future. This page is, and will be updated as supported methods for styling your code evolve.)*
+
+## Astro's Markdown `code` via single backticks
+
+When writing in Markdown, short code samples typed between single backticks renders as the inline `<code>` html tag.
+
+Astro's default starters do not include *any* styles for `<code>`, but you can add styling via css. These are the styles I have added to `global.css` for the styling you see here:
+
+</Markdown>
+
+<Prism lang="css" code={`
+code {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  padding: 0.18em 0.5em;
+}
+`} />
+
+<Markdown>
+## Astro's **`<Prism />`** Component
+
+The css code above was rendered using Astro's `<Prism />` component. This component should be passed both a `lang` property and a `code` property to properly highlight code of a particular language.
+
+Additionally, you **must** supply (via a stylesheet or an import) a [Prism Theme](https://github.com/PrismJS/prism/tree/master/themes) for syntax highlighting. The `<Prism />` component itself will only *apply style classes* to your code, but without a Prism theme to define those style classes, your code will not be styled. You can [add the theme's css file to your own code](https://www.giters.com/PrismJS/prism-themes) or use an [external link to one of the themes from an external CDN](https://cdnjs.com/libraries/prism) such as
+
+</Markdown>
+
+<Prism lang="html" code={`
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css">
+`} />
+
+<Markdown>
+Once you have a Prism theme downloaded or linked, you can either ... 
+
+### 1. Type code directly into the code attribute:
+
+</Markdown>
+
+<Prism lang="astro" code={`
+    //NB: The \` character needs to be escaped with a back slash!
     <Prism lang="js" code={\` 
     // In your gatsby-config.js
     plugins: [
@@ -42,50 +87,19 @@ let codesnippet = `
     ],
     \`}/>
   `} />
+<Markdown>
+## OR
 
-<h3>renders as...</h3>
-  <Prism lang="js" code={` 
-    // In your gatsby-config.js
-    plugins: [
-      {
-        resolve: \`gatsby-transformer-remark\`,
-        options: {
-          plugins: [
-            \`gatsby-remark-prismjs\`,
-          ],
-        },
-      },
-    ],
-  `} />
+### 2. Pass a variable in to the `code` attribute of `<Prism />`
 
-  <h2>Code written between 2 markdown tags also works (no escape for single back ticks needed)</h2>
-
-  <Prism lang="astro" code={`
-  <Markdown>
-    \`\`\`js
-      // In your gatsby-config.js
-      plugins: [
-        {
-          resolve: \`gatsby-transformer-remark\`,
-          options: {
-            plugins: [
-              \`gatsby-remark-prismjs\`,
-            ],
-          },
-        },
-      ],
-    \`\`\`
   </Markdown>
-  `} />
-
-  
-
-  <h2>Code passed in as a variable (defined in frontmatter) to code attribute of a Prism component</h2>
   <Prism lang="astro"  code={`
     <Prism lang="js"  code={codesnippet} />
   `} />
-  <h3>Combined with the following Astro frontmatter...</h3>
+<Markdown>
+  ### ... Combined with the following Astro front matter ...
 
+</Markdown>
 <Prism lang="astro" code={`
 ---
 import { Markdown } from 'astro/components';
@@ -107,56 +121,112 @@ let codesnippet = \`
   \`
 ---
 `} />
-<h3>also successfully renders as ... </h3>
+
+<h3>Both methods will render ... </h3>
   <Prism lang="js"  code={codesnippet} />
 
+
+
+ 
+  <Markdown>
+  ## Code written in an Astro `<Markdown>` component
+
+  Astro's built-in `<Markdown>` component uses Prism by default... but styling can be a bit hit or miss as Astro's codebase changes and we are preparing to move to Shiki as a default. (I have seen some code be highlighted, but with no indentation. I have seen indentation, but no highlighting....) So, be prepared!
+  
+  Code can be written inside `<Markdown></Markdown>` tags using three backticks (Note: no escape for single back ticks needed when writing code this way) or typed/passed in to a self-closing tag as a `content` attribute.
+  </Markdown>
+
+  <Prism lang="astro" code={`
+  <Markdown>
+    \`\`\`js
+      // In your gatsby-config.js
+      plugins: [
+        {
+          resolve: \`gatsby-transformer-remark\`,
+          options: {
+            plugins: [
+              \`gatsby-remark-prismjs\`,
+            ],
+          },
+        },
+      ],
+    \`\`\`
+  </Markdown>
+
+  <Markdown content={\`
+     // In your gatsby-config.js
+      plugins: [
+        {
+          resolve: \`gatsby-transformer-remark\`,
+          options: {
+            plugins: [
+              \`gatsby-remark-prismjs\`,
+            ],
+          },
+        },
+      ],
+  \`} />
+
+  <Markdown content={codesnippet} />
+  `} />
+
+<h3>... and all of these will render a variation of ... </h3>
+  <Markdown content={`
+     // In your gatsby-config.js
+      plugins: [
+        {
+          resolve: \`gatsby-transformer-remark\`,
+          options: {
+            plugins: [
+              \`gatsby-remark-prismjs\`,
+            ],
+          },
+        },
+      ],
+  `} />
+
+
 <h2>Rendering Astro Code</h2>
-<p>In order to show you Astro code, I use the language "astro" in both the Markdown "three tick" notation, and in a Prism component.</p>
+<p>Yes, there's support for Astro code syntax highlighting!</p>
 
 <p>Here's my Astro new page template:</p>
+
+
+<Prism lang="astro" code={`
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="New Page Template!">
+  <main>
+    <p>New page template!</p>
+  </main>
+</BaseLayout>
+`} />
+
+
 <Markdown>
-  ```astro
-  ---
-  import BaseLayout from '../layouts/BaseLayout.astro';
-  ---
-  <BaseLayout title="New Page Template!">
-    <main>
-      <p>New page template!</p>
-    </main>
-  </BaseLayout>
-  ```
 ... and I've rendered it by typing this:
 </Markdown>
 <Prism lang="astro" code={`
- <Markdown>
-   \`\`\`astro
-    ---
-    import BaseLayout from '../layouts/BaseLayout.astro';
-    ---
-    <BaseLayout title="New Page Template!">
-      <main>
-        <p>New page template!</p>
-      </main>
-    </BaseLayout>
-    \`\`\`
-</Markdown>
+<Prism lang="astro" code={\`
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="New Page Template!">
+  <main>
+    <p>New page template!</p>
+  </main>
+</BaseLayout>
+\`} />
 `} />
 
-<p>... or this</p>
-<p>NOTE: Astro is moving from Prism to Shiki, so this page isn't yet (but will at some point be) updated with the more recent Code component!</p>
 <Markdown>
-```astro
-  <Prism lang="astro" code={`
-      ---
-      import BaseLayout from '../layouts/BaseLayout.astro';
-      ---
-      <BaseLayout title="New Page Template!">
-        <main>
-          <p>New page template!</p>
-        </main>
-      </BaseLayout>
-  `} />
-```
+## Astro's `<Code />` component (Shiki)
+
+Astro now also supports a newer `<Code />` component for rendering code.
+
+I'll be back soon to add the details here!
+
 </Markdown>
 
 
