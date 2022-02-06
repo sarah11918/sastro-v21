@@ -1,7 +1,14 @@
 {
-  "name": "@example/starter",
-  "version": "0.0.1",
+  "name": "sastro-v21",
+  "version": "1.0.0",
   "private": true,
+  "description": "Sarah Rainsberger's personal website",
+  "main": "src/pages/index.astro",
+   "author": {
+    "name": "Sarah Rainsberger",
+    "url": "https://rainsberger.ca"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "bash parseenv.sh astro dev",
     "start": "bash parseenv.sh astro dev",
@@ -20,5 +27,8 @@
     "@codesandbox/sandpack-react": "^0.13.8",
     "graphql": "^16.2.0",
     "react-day-picker": "^7.4.10"
-  }
+  },
+    "keywords": [
+    "astro"
+  ]
 }
