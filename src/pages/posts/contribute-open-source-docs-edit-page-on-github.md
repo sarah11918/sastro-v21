@@ -1,5 +1,5 @@
 ---
-title: Contribute to Open Source Docs via "Edit this page on GitHub
+title: Contribute to Open Source Docs via "Edit this page" on GitHub
 author: Sarah
 date: '2022-02-10'
 description: Have you ever been reading documentation for an open source project and found a typo, or an out-of-date code example? If there's an "edit this page on GitHub" link, then you're only a few clicks away from contributing to Open Source and helping out a project!
