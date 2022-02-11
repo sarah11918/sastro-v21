@@ -18,7 +18,7 @@ On every page of the Astro documentation, there is a pencil icon and a link to "
 
 ![Astro Docs home page, with the edit this page link circled.](https://lh3.googleusercontent.com/pw/AM-JKLU_kl-WFfHVC6TBI-CZe7esReIiCzC_xaPd4kdjQFri7mVsOFovee04s5p76FzRKR_hKbPtVUjdYYDeFUx6lzuIsXp52p9H5KqzSvkn0uQz8JYtKKzcp50J7B0g56lxQ-itFF3mhbfsCH9zxcwM7vQiTg=w2367-h1334-no?)
 
-Click this link!  Your browser will navigate to the Astro Docs source repository on GitHub, taking you directly to the file for the page you're viewing. To make a contribution to this file, select the pencil icon to edit. Notice that if you are not logged in, you will be prompted to log in. 
+Click this link!  Your browser will navigate to the Astro Docs source repository on GitHub, taking you directly to the file for the page you're viewing. To make a contribution to this file, select the pencil icon to edit. If you are not logged in, you will be prompted to log in. 
 
 ![GitHub page, wit the pencil icon for editing the page highlighted, and hover text: You must be logged in to make or propose changes.](https://lh3.googleusercontent.com/pw/AM-JKLWVjV1esyJ6ytzpgiCBX204uQoDfINTRCUqX1GN936Rd5MkPr4aZrkwuWORHWF9NggpJ4YIUu1ptidj2jjak2J8kW8Mj_k0tCuN79Vo0RY8jNPjviK26fKNoRmM-HsLmfz4INflxaGbuzh9e4j7YF_M_w=w2132-h1009-no?)
 
@@ -28,7 +28,7 @@ If you *are* logged in, the pencil icon will take you to edit this file in your 
 
 
 ## Propose Changes
-After clicking the pencil icon to edit that file, you will see a banner reminding you that you do not have permission to make changes *directly* to the file. Instead, you will make changes in your *own* copy of the documents, then submit a pull request to the original project.
+After clicking the pencil icon to edit that file, you will be greeted by a banner reminding you that you do not have permission to make changes *directly* to the file. Instead, you will make changes in your *own* copy of the documents, then submit a pull request to the original project.
 
 In edit mode, you can flip between typing Markdown source code and previewing those changes on the page.
 
@@ -53,7 +53,7 @@ The next page you'll reach will again confirm that your changes can be merged wi
 
 >⚠️ **When you click "Create a pull request" on this screen, now you *actually* create a pull request! This one counts!**
 
-Notice that you can leave a comment in Markdown, and also preview your comment. So, if you'd like to add a more descriptive or elaborate description of your changes here, including lists, formatting, code blocks... feel free!
+Here, you can leave a comment in Markdown, and also preview your comment. So, if you'd like to add a more descriptive or elaborate description of your changes here, including lists, formatting, code blocks... feel free!
 
 Also, there is a checkbox (selected by default) at the bottom, just before the submit button, for allowing edits by maintainers. This allows a maintainer of the project to accept your pull request while still making a change like fixing a typo or addressing a style issue. Perhaps the maintainer agrees with the idea of your proposted changes, but is unable to accept them exactly as you've written them. By checking this box, you're allowing the maintainer to modify your changes so that they can still accept your pull request. Otherwise, if the maintainer cannot accept your changes *exactly* as you've proposed them, they will need to ask you to make changes and resubmit, or will be forced to deny your proposed changes entirely.
 
@@ -62,7 +62,7 @@ Once you are satisfied with the content of your pull request, click the button t
 ## Success!
 ![A GitHub page for a completed pull request, showing its status as open, options for closing it or adding another comment, as well as a button to unsubscribe from further notifications about this request.](https://lh3.googleusercontent.com/pw/AM-JKLVm_4gUSrAdry7tFHPm2qiWnXNHS_x4LoYOLRRDnbXIYlg31Ia4uVOxynamMfysRFj1M9c8PI01AlrVi1vhmJmMaQ5-WpP2DG_zJnJ7yX_O0e_CBL1Ciydd42ojuO4nNOeF7k2qqsqu3x-Epzl2-J3JoA=w1806-h1229-no?authuser=0)
 
-Congratulations! Your contribution has left your hands! Your pull request joins all the other pull requests (show in the upper left) to that project. 
+Congratulations! Your contribution has left your hands! Your pull request joins all the other pull requests (shown in the upper left) to that project. 
 
 You can still add a follow up comment or decide to close the pull request at any time by revisiting this page. You can't "delete" a pull request, but you can "close" it to let the maintainers of the project know that you are withdrawing your proposed changes. The pull request continues to exist, (and can even be re-opened with the press of a button!) but closed PRs are typically hidden out of sight behind a default filter that only shows "open" (unresolved) pull requests.
 
