@@ -31,7 +31,7 @@ For RSS, that's why.
 
 (And, for my next goal, which will be to add tags to my blog post and have pages corresponding to individual tags. Astro will automatically generate all my static routes for `/posts/first-post` and `/posts/second-post` etc. to correspond to my individual blog post Markdown files. But, I will need to make use of Astro's **dynamic routing** to create "pages" like `/posts/tags/chromebook` and `posts/tags/react` because there's no one single Markdown file corresponding to either of these URL paths. If I have truly wrapped my head around this concept, then look for this coming soon!)
 
-## Creating My first Dyamic Route
+## Creating My first Dynamic Route
 
 So, the first thing I had to do was turn one of my **static** routes into a **dynamic** route. Even though I didn't need to create multiple URL paths from it, I did need an Astro page component that exported a `getStaticPaths()` function. I needed an *XML document* (not necessarily a page!) to be built, but right now Astro can only "build" files from Astro page components. So, I had to use a page to build this file.
 
