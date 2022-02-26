@@ -4,7 +4,7 @@
   "private": true,
   "description": "Sarah Rainsberger's personal website",
   "main": "src/pages/index.astro",
-   "author": {
+  "author": {
     "name": "Sarah Rainsberger",
     "url": "https://rainsberger.ca"
   },
@@ -19,7 +19,8 @@
     "@astrojs/renderer-react": "^0.4.1",
     "@astrojs/renderer-svelte": "^0.3.0",
     "accessible-astro-components": "^1.1.0",
-    "astro": "^0.22.20"
+    "astro": "^0.22.20",
+    "astro-xelement": "^3.1.6"
   },
   "dependencies": {
     "@apollo/client": "^3.5.6",
@@ -28,7 +29,7 @@
     "graphql": "^16.2.0",
     "react-day-picker": "^7.4.10"
   },
-    "keywords": [
+  "keywords": [
     "astro"
   ]
 }
