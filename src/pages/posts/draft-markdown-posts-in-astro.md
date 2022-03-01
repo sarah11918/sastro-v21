@@ -11,7 +11,7 @@ slug: draft-markdown-posts-in-astro
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLW5_x_VX1Yc1Pyo5GwU-ptYInDKww8s1e9OxFZNGoPrqmZSu0afEyM5uLzZgnzE8ahMZ3KBbPPZE4CxZxFAz54jcbG3zdFpcSt_hrBO1elOH22xgLg1ASZfgVl9SYGB_koYDxhm8kISu6VAyJkLzvLXFQ=w250-no?"
 tags: ["astro", "markdown", "blogging"]
 ---
-Thanks to [Pranav/obnoxiousnerd](https://github.com/obnoxiousnerd), Astro [v0.22.15](https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md#02215) now supports adding a `draft: true` field to the front matter of a Markdown blog post to prevent the page being build during `astro build`! 🥳
+Thanks to [Pranav](https://github.com/retronav), Astro [v0.22.15](https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md#02215) now supports adding a `draft: true` field to the front matter of a Markdown blog post to prevent the page being build during `astro build`! 🥳
 
 With any luck, you wont see this page... until I remove the draft flag!
 
