@@ -16,17 +16,24 @@ See the demo and our up-to-the-moment progress at https://xelement-bird.netlify.
 ## About XElement
 XElement is an Astro-native solution to providing interactive web elements without the need for script tags or any other JavaScript framework components (React, Preact, Vue, Svelte, Solid...)
 
-npm package - https://www.npmjs.com/package/astro-x...
+npm package - https://www.npmjs.com/package/astro-xelement
+
 XElement Docs - https://xelement-docs.vercel.app
 
 ## This video:
 
 0:00 - Introduction to Astro and this project
+
 1:17 - What is "sBird"?
+
 2:59 - Building in React vs Astro vs React-in-Astro
+
 6:06 - Partial Hydration in Astro
+
 12:14 - How XElement accomplishes interactivity natively in Astro
+
 15:00 - XElement component demonstration
+
 Since I can't fit the entire transcript in the YouTube video description, here it is all on this page.
 
 <iframe src="https://www.youtube.com/embed/0-aH18YH2SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -90,4 +97,3 @@ And none of these are interfering with each other. So for instance, if one was t
 
 Sarah Rainsberger  18:26  
 Yeah, let's do it.
-
