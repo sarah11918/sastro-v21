@@ -1,0 +1,20 @@
+---
+import { Debug } from 'astro/components';
+const sum = (a) => (b) => a + b
+const serverObject = {
+  a: 0,
+  b: "string",
+  c: {
+    nested: "object"
+  }
+}
+---
+<html>
+    <head></head>
+    <body>
+  <main>
+
+     <Debug {sum(2)(6)} />
+  </main>
+  </body>
+</html>
