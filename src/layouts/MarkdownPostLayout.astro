@@ -13,7 +13,7 @@ const postURL = `https://rainsberger.ca/posts/${content.slug}`
     </div>
     
     <p>Written by: {content.author} on {postDate}</p>
-    <img src={content.hero}>
+    <img src={content.hero} alt={content.alt}>
     <article>
       <slot />
     </article>

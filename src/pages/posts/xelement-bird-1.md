@@ -6,6 +6,7 @@ description: aFuzzyBear and I have started a community, build-in-public project 
 layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["videos", "astro", "xelement"]
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLXDqxBx3MfCVxblhM_-aNmnTYrbQfWLjuLXSdFvUESmZNtFT8K1UcldfF_m5QVOVxIHPzc_j3MxL4z268bq0QjOVQ6nFKC5vrhUJo54N3i80TF5uLEsltfChLvzckvA54jHTKOwVSiGmGYjsrFTZSMnBA=w250-no?"
+alt: "Video editing software"
 ---
 Last weekend, aFuzzyBear and I spent 3hrs on live-chat in the Astro Discord while other community members joined in. I've started editing the footage and will be uploading it in smaller pieces.
 
