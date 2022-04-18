@@ -1,10 +1,10 @@
 ---
-const { photoprops } = Astro.props
+const { photoprops, width } = Astro.props
 const { id, title, secret } = photoprops
 const picsrc= `https://live.staticflickr.com/65535/${id}_${secret}_z.jpg`
 const picurl= `https://www.flickr.com/photos/sarahrainsberger/${id}`
 ---
 <div>
   <p>{title} - {id}</p>
-  <a href={picurl} ><img src={picsrc} width="640" alt={title} /></a>
+  <a href={picurl} ><img src={picsrc} width={width} alt={title} /></a>
 </div>
