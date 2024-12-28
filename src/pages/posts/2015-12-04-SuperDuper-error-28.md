@@ -25,5 +25,3 @@ It turns out that SuperDuper was simply trying to write those new folders first 
 At Joe's suggestion, <b>I simply navigated to those two particular folders *on my backup drive* and deleted them manually</b>. This meant that for the moment, I didn't have a backup of those two folders (on this drive), but as soon as I ran the backup, SuperDuper would throw them back in there. I didn't know that I could manually tweak the backup drive, as I'm sure that's not the point, but it seems to have worked out just fine.
 
 Since a lot of what I do on this machine involves organizing hundreds of GBs of photos, I'm making a note of this lesson in case it happens again! In this case, I had wanted to move two large folders out of "Pictures" so that I could set Spider Oak to simply backup and watch for future changes in that whole folder, rather than add new subfolders to the backup every time I created them.
-
-I hope this post helps someone (maybe even me!) in the future!
