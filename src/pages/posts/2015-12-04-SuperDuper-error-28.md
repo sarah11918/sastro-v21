@@ -1,15 +1,14 @@
 ---
-title: 'How I fixed SuperDuper Error Type 28: no space left on device'
-subtitle: ''
-date: '2015-12-04'
-excerpt: >-
-  The story of "Error 28: no space left on device" means when you're quite
-  certain your external hard drive is large enough to backup your laptop's
-  internal hard drive.
+title: "How I fixed SuperDuper Error Type 28: no space left on device"
+date: 2015-12-04
+excerpt: "The story of \"Error 28: no space left on device\" means when you're
+  quite certain your external hard drive is large enough to backup your laptop's
+  internal hard drive."
 hide_header: false
 template: post
 layout: ../../layouts/OldMarkdownPostLayout.astro
-tags: ["solutions"]
+tags:
+  - solutions
 ---
 Yesterday, (aka "The Day that Tech Stopped Working") after a string of tech annoyances, I figured the safest thing to do was to quickly run a backup. (I don't have automated backups, but I do run a SuperDuper backup a few times per month, and especially whenever I've made major changes to my file system.) Somewhat befitting the crazy I had, for the first time, running a SuperDuper backup failed. 
 
@@ -26,3 +25,5 @@ It turns out that SuperDuper was simply trying to write those new folders first 
 At Joe's suggestion, <b>I simply navigated to those two particular folders *on my backup drive* and deleted them manually</b>. This meant that for the moment, I didn't have a backup of those two folders (on this drive), but as soon as I ran the backup, SuperDuper would throw them back in there. I didn't know that I could manually tweak the backup drive, as I'm sure that's not the point, but it seems to have worked out just fine.
 
 Since a lot of what I do on this machine involves organizing hundreds of GBs of photos, I'm making a note of this lesson in case it happens again! In this case, I had wanted to move two large folders out of "Pictures" so that I could set Spider Oak to simply backup and watch for future changes in that whole folder, rather than add new subfolders to the backup every time I created them.
+
+I hope this post helps someone (maybe even me!) in the future!
